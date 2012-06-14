@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<estadísticas>
+  <idUsuario>1</idUsuario>
+  <idActividad>11</idActividad>
+  <idLección>0</idLección>
+  <swLecciónTerminada>false</swLecciónTerminada>
+  <fecha>09/10/2011</fecha>
+  <hora>22:04</hora>
+  <caracteresPorMinuto>9</caracteresPorMinuto>
+  <aciertos>9</aciertos>
+  <porcentajeAciertos>100</porcentajeAciertos>
+  <duración>1</duración>
+  <errores>0</errores>
+  <porcentajeErrores>0</porcentajeErrores>
+  <caracterConMásErrores_Letra>-</caracterConMásErrores_Letra>
+  <caracterConMásErrores_Repetición>0</caracterConMásErrores_Repetición>
+  <carácterSegundoConMásErrores_Letra>-</carácterSegundoConMásErrores_Letra>
+  <carácterSegundoConMásErrores_Repetición>0</carácterSegundoConMásErrores_Repetición>
+  <caracterTerceroConMásErrores_Letra>-</caracterTerceroConMásErrores_Letra>
+  <caracterTerceroConMásErrores_Repetición>0</caracterTerceroConMásErrores_Repetición>
+</estadísticas>

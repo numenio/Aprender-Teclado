@@ -1,0 +1,174 @@
+﻿<Window
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:local="clr-namespace:Aprender_Teclado" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" x:Name="ventana" mc:Ignorable="d"
+	x:Class="Aprender_Teclado.MainWindow"
+	Title="Aprender Teclado"
+	Width="780" Height="508" Background="Black" MinWidth="716" MinHeight="480" KeyDown="ventana_KeyDown" FontFamily="Arial" KeyUp="ventana_KeyUp" WindowStartupLocation="CenterScreen" WindowState="Maximized" Icon="input_keyboard.ico">
+	<Window.Resources>
+		<Style x:Key="tecladoStyle1" TargetType="{x:Type local:teclado}">
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="{x:Type local:teclado}">
+						<Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" Padding="{TemplateBinding Padding}" SnapsToDevicePixels="True">
+							<ContentPresenter ContentTemplate="{TemplateBinding ContentTemplate}" Content="{TemplateBinding Content}" ContentStringFormat="{TemplateBinding ContentStringFormat}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+						</Border>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+		<Storyboard x:Key="OnMouseEnter1">
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="btnAdminActividades">
+				<SplineDoubleKeyFrame KeyTime="0:0:0.2" Value="0.706" KeySpline="0,0,0.625,1"/>
+				<SplineDoubleKeyFrame KeyTime="0:0:0.5" Value="1.489" KeySpline="0.5,0,0.625,1"/>
+				<SplineDoubleKeyFrame KeyTime="0:0:0.7" Value="1.223" KeySpline="0,0,0.625,1"/>
+				<SplineDoubleKeyFrame KeyTime="0:0:0.9" Value="1.445"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="btnAdminActividades">
+				<SplineDoubleKeyFrame KeyTime="0:0:0.2" Value="-6.628" KeySpline="0,0,0.625,1"/>
+				<SplineDoubleKeyFrame KeyTime="0:0:0.5" Value="11" KeySpline="0.5,0,0.625,1"/>
+				<SplineDoubleKeyFrame KeyTime="0:0:0.7" Value="5" KeySpline="0,0,0.625,1"/>
+				<SplineDoubleKeyFrame KeyTime="0:0:0.9" Value="10"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="btnAdminActividades">
+				<SplineDoubleKeyFrame KeyTime="0:0:0.2" Value="0.876" KeySpline="0,0,0.625,1"/>
+				<SplineDoubleKeyFrame KeyTime="0:0:0.5" Value="1.5" KeySpline="0.5,0,0.625,1"/>
+				<SplineDoubleKeyFrame KeyTime="0:0:0.7" Value="1.262" KeySpline="0,0,0.625,1"/>
+				<SplineDoubleKeyFrame KeyTime="0:0:0.9" Value="1.476"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="btnAdminActividades">
+				<SplineDoubleKeyFrame KeyTime="0:0:0.2" Value="2.596" KeySpline="0,0,0.625,1"/>
+				<SplineDoubleKeyFrame KeyTime="0:0:0.5" Value="-10.5" KeySpline="0.5,0,0.625,1"/>
+				<SplineDoubleKeyFrame KeyTime="0:0:0.7" Value="-5.5" KeySpline="0,0,0.625,1"/>
+				<SplineDoubleKeyFrame KeyTime="0:0:0.9" Value="-10"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Key="OnMouseEnter2">
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="btnPreferencias">
+				<SplineDoubleKeyFrame KeyTime="0:0:0.2" Value="0.717"/>
+				<SplineDoubleKeyFrame KeyTime="0:0:0.5" Value="1.466"/>
+				<SplineDoubleKeyFrame KeyTime="0:0:0.7" Value="1.177"/>
+				<SplineDoubleKeyFrame KeyTime="0:0:0.9" Value="1.533"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="btnPreferencias">
+				<SplineDoubleKeyFrame KeyTime="0:0:0.2" Value="0.792"/>
+				<SplineDoubleKeyFrame KeyTime="0:0:0.5" Value="1.452"/>
+				<SplineDoubleKeyFrame KeyTime="0:0:0.7" Value="1.19"/>
+				<SplineDoubleKeyFrame KeyTime="0:0:0.9" Value="1.476"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="btnPreferencias">
+				<SplineDoubleKeyFrame KeyTime="0:0:0.2" Value="-6.375"/>
+				<SplineDoubleKeyFrame KeyTime="0:0:0.5" Value="10.5"/>
+				<SplineDoubleKeyFrame KeyTime="0:0:0.7" Value="4"/>
+				<SplineDoubleKeyFrame KeyTime="0:0:0.9" Value="12"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="btnPreferencias">
+				<SplineDoubleKeyFrame KeyTime="0:0:0.2" Value="4.375"/>
+				<SplineDoubleKeyFrame KeyTime="0:0:0.5" Value="-9.5"/>
+				<SplineDoubleKeyFrame KeyTime="0:0:0.7" Value="-4"/>
+				<SplineDoubleKeyFrame KeyTime="0:0:0.9" Value="-10"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Key="OnMouseEnter3">
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="btnEstadísticas">
+				<SplineDoubleKeyFrame KeyTime="0:0:0.2" Value="0.644"/>
+				<SplineDoubleKeyFrame KeyTime="0:0:0.5" Value="1.311"/>
+				<SplineDoubleKeyFrame KeyTime="0:0:0.7" Value="1.088"/>
+				<SplineDoubleKeyFrame KeyTime="0:0:0.9" Value="1.311"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="btnEstadísticas">
+				<SplineDoubleKeyFrame KeyTime="0:0:0.2" Value="0.619"/>
+				<SplineDoubleKeyFrame KeyTime="0:0:0.5" Value="1.309"/>
+				<SplineDoubleKeyFrame KeyTime="0:0:0.7" Value="1.143"/>
+				<SplineDoubleKeyFrame KeyTime="0:0:0.9" Value="1.309"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="btnEstadísticas">
+				<SplineDoubleKeyFrame KeyTime="0:0:0.2" Value="-8"/>
+				<SplineDoubleKeyFrame KeyTime="0:0:0.5" Value="7"/>
+				<SplineDoubleKeyFrame KeyTime="0:0:0.7" Value="2"/>
+				<SplineDoubleKeyFrame KeyTime="0:0:0.9" Value="7"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="btnEstadísticas">
+				<SplineDoubleKeyFrame KeyTime="0:0:0.2" Value="8"/>
+				<SplineDoubleKeyFrame KeyTime="0:0:0.5" Value="-6.5"/>
+				<SplineDoubleKeyFrame KeyTime="0:0:0.7" Value="-3"/>
+				<SplineDoubleKeyFrame KeyTime="0:0:0.9" Value="-6.5"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+	</Window.Resources>
+	<Window.Triggers>
+		<EventTrigger RoutedEvent="Mouse.MouseEnter" SourceName="btnAdminActividades">
+			<BeginStoryboard x:Name="OnMouseEnter1_BeginStoryboard" Storyboard="{StaticResource OnMouseEnter1}"/>
+		</EventTrigger>
+		<EventTrigger RoutedEvent="Mouse.MouseLeave" SourceName="btnAdminActividades">
+			<StopStoryboard BeginStoryboardName="OnMouseEnter1_BeginStoryboard"/>
+		</EventTrigger>
+		<EventTrigger RoutedEvent="Mouse.MouseEnter" SourceName="btnPreferencias">
+			<BeginStoryboard x:Name="OnMouseEnter2_BeginStoryboard" Storyboard="{StaticResource OnMouseEnter2}"/>
+		</EventTrigger>
+		<EventTrigger RoutedEvent="Mouse.MouseLeave" SourceName="btnPreferencias">
+			<StopStoryboard BeginStoryboardName="OnMouseEnter2_BeginStoryboard"/>
+		</EventTrigger>
+		<EventTrigger RoutedEvent="Mouse.MouseEnter" SourceName="btnEstadísticas">
+			<BeginStoryboard x:Name="OnMouseEnter3_BeginStoryboard" Storyboard="{StaticResource OnMouseEnter3}"/>
+		</EventTrigger>
+		<EventTrigger RoutedEvent="Mouse.MouseLeave" SourceName="btnEstadísticas">
+			<StopStoryboard BeginStoryboardName="OnMouseEnter3_BeginStoryboard"/>
+		</EventTrigger>
+	</Window.Triggers>
+
+	<Grid x:Name="LayoutRoot">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="0.838*"/>
+			<ColumnDefinition Width="0.162*"/>
+		</Grid.ColumnDefinitions>
+        <!--<local:teclado x:Name="teclado" Margin="20,159.805,3.5,31.416" RenderTransformOrigin="0.5,0.5" MinHeight="271" MinWidth="656.5" Height="278.778" Style="{DynamicResource tecladoStyle1}" Width="Auto">
+			<local:teclado.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="0.9" ScaleY="0.9"/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</local:teclado.RenderTransform>
+		</local:teclado>-->
+        <TextBlock x:Name="lblInfo" Height="36" Margin="53,0,21,16" TextWrapping="Wrap" VerticalAlignment="Bottom" Foreground="#FFE0F70F" TextAlignment="Center" FontSize="10" Grid.ColumnSpan="2"><Run Text="Recordar qué hay que escribir: F1"/><Run Language="es-es" Text="   -   "/><Run Text="Deletrear qué hay que escribir: F2"/><Run Language="es-es" Text="  -   "/><Run Text="Pedir ayuda acerca de dónde está la tecla pedida: F3 "/><Run Language="es-es" Text="  -   "/><Run Text="Ocultar o hacer visible el teclado en pantalla: F4 "/><Run Language="es-es" Text="  -   "/><Run Text="Cambiar la posición del acento agudo en el teclado: F5 "/><Run Language="es-es" Text="  -   "/><Run Text="Escuchar estadísticas actuales: F6 "/><Run Language="es-es" Text="   -   "/><Run Text="Volver a la lista de lecciones: Escape"/><Run Language="es-es" Text="  -   "/><Run Text="Callar la voz: Control "/><Run Language="es-es" Text="   -   "/><Run Text="Abrir Editor de Actividades: F9"/><Run Language="es-es" Text=" - Abrir Centro de Estadísticas: F10  -   "/><Run Text="Abrir las Preferencias: F12 "/></TextBlock>
+        <Image x:Name="btnAdminActividades" HorizontalAlignment="Left" Height="42" Margin="4,0,0,126" VerticalAlignment="Bottom" Width="45" Source="actividades.png" OpacityMask="Black" RenderTransformOrigin="0.5,0.5" MouseLeftButtonUp="btnAdminActividades_MouseLeftButtonDown" ToolTip="Nueva Actividad (F9)" Cursor="Hand">
+        	<Image.RenderTransform>
+        		<TransformGroup>
+        			<ScaleTransform/>
+        			<SkewTransform/>
+        			<RotateTransform/>
+        			<TranslateTransform/>
+        		</TransformGroup>
+        	</Image.RenderTransform>
+        </Image>
+        <Image x:Name="btnPreferencias" HorizontalAlignment="Left" Height="42" Margin="4,0,0,8" VerticalAlignment="Bottom" Width="45" Source="preferencia.png" RenderTransformOrigin="0.5,0.5" MouseLeftButtonUp="btnPreferencias_MouseLeftButtonUp" OpacityMask="Black" ToolTip="Preferencias (F12)" Cursor="Hand">
+        	<Image.RenderTransform>
+        		<TransformGroup>
+        			<ScaleTransform/>
+        			<SkewTransform/>
+        			<RotateTransform/>
+        			<TranslateTransform/>
+        		</TransformGroup>
+        	</Image.RenderTransform>
+        </Image>
+        <TextBlock Height="164" Margin="22,12,21,0" Name="txtTexto" Text="TextBlock" VerticalAlignment="Top" TextAlignment="Center" Foreground="#FFCFF20C" Grid.ColumnSpan="2" />
+        <StackPanel Grid.Column="1" Margin="0,0,0,40" Height="280" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="118.824">
+            <TextBlock Height="43" Margin="8,0" TextWrapping="Wrap" Foreground="#FFD6F904" TextAlignment="Center" FontSize="16" Name="txtTítuloAciertos"><Run Background="Transparent" Language="es-es" Text="- Aciertos -"/><LineBreak/><Run Background="Transparent" Language="es-es" Text="Errores"/></TextBlock>
+        	<local:medidor Height="114" HorizontalAlignment="Left" x:Name="medidor1" VerticalAlignment="Top" Width="114" />
+            <TextBlock FontSize="13" Foreground="#FFD6F904" Height="106" TextAlignment="Left" TextWrapping="Wrap" Name="txtEstadísticas"><Run Background="Transparent" Language="es-es" Text="- Aciertos -" /><LineBreak /><Run Background="Transparent" Language="es-es" Text="Errores" /></TextBlock>
+        </StackPanel>
+        <Image x:Name="btnEstadísticas" HorizontalAlignment="Left" Height="42" Margin="4,0,0,67" VerticalAlignment="Bottom" Width="45" Source="estadísticas.png" OpacityMask="Black" RenderTransformOrigin="0.5,0.5" ToolTip="Abrir Estadísticas (F8)" MouseLeftButtonUp="btnEstadísticas_MouseLeftButtonUp" Cursor="Hand">
+        	<Image.RenderTransform>
+        		<TransformGroup>
+        			<ScaleTransform/>
+        			<SkewTransform/>
+        			<RotateTransform/>
+        			<TranslateTransform/>
+        		</TransformGroup>
+        	</Image.RenderTransform>
+        </Image>
+        <TextBlock Height="13.333" TextWrapping="Wrap" VerticalAlignment="Bottom" Foreground="#FF998E12" FontSize="9.333" TextAlignment="Center" Grid.ColumnSpan="2"><Run Language="es-es" Text="Autor: Guillermo Toscani - guillermo_toscani@yahoo.com.ar - Programa Gratuito"/></TextBlock>
+    </Grid>
+</Window>

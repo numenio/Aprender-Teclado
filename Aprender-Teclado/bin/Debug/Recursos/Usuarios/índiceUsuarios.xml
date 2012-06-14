@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<usuarios>
+  <usuario id="1" nombre="Guillermo" apellido="Toscani" />
+  <usuario id="3" nombre="Pablo " apellido="López" />
+</usuarios>

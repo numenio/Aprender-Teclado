@@ -1,0 +1,10 @@
+﻿<Application
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	x:Class="Aprender_Teclado.App"
+	StartupUri="administrarUsuarios.xaml"
+    ShutdownMode="OnLastWindowClose">
+	<Application.Resources>
+		<!-- Debe definir aquí los recursos en el ámbito del nivel de aplicación. -->
+	</Application.Resources>
+</Application>

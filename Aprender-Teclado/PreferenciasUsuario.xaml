@@ -1,0 +1,26 @@
+﻿<Window
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	x:Class="Aprender_Teclado.Preferencias"
+	x:Name="Window"
+	Title="Preferencias"
+	Width="433" Height="518" Background="Black" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded" KeyDown="Window_KeyDown" Icon="input_keyboard.ico" ResizeMode="NoResize">
+
+	<Grid x:Name="LayoutRoot">
+		<ComboBox x:Name="cmbTipoLetra" Height="20" Margin="200,96,28,0" VerticalAlignment="Top" TabIndex="1" GotFocus="cmbTipoLetra_GotFocus" SelectionChanged="cmbTipoLetra_SelectionChanged" KeyDown="cmbTipoLetra_KeyDown" />
+		<ComboBox x:Name="cmbTamañoLetra" Height="20" Margin="200,150,28,0" VerticalAlignment="Top" TabIndex="2" GotFocus="cmbTamañoLetra_GotFocus" SelectionChanged="cmbTamañoLetra_SelectionChanged" KeyDown="cmbTamañoLetra_KeyDown" />
+		<ComboBox x:Name="cmbColorLetra" Margin="200,205,28,0" Height="20" VerticalAlignment="Top" TabIndex="3" GotFocus="cmbColorLetra_GotFocus" SelectionChanged="cmbColorLetra_SelectionChanged" KeyDown="cmbColorLetra_KeyDown" />
+		<ComboBox x:Name="cmbColorFondo" Margin="200,0,28,199" Height="20" VerticalAlignment="Bottom" TabIndex="4" GotFocus="cmbColorFondo_GotFocus" SelectionChanged="cmbColorFondo_SelectionChanged" KeyDown="cmbColorFondo_KeyDown" />
+		<ComboBox x:Name="cmbVoces" Height="20" Margin="200,0,28,145" VerticalAlignment="Bottom" TabIndex="5" GotFocus="cmbVoces_GotFocus" SelectionChanged="cmbVoces_SelectionChanged" KeyDown="cmbVoces_KeyDown" />
+		<ComboBox x:Name="cmbVelocidadVoz" Height="20" Margin="200,0,28,90" VerticalAlignment="Bottom" TabIndex="6" GotFocus="cmbVelocidadVoz_GotFocus" SelectionChanged="cmbVelocidadVoz_SelectionChanged" KeyDown="cmbVelocidadVoz_KeyDown" />
+		<TextBlock Height="41" Margin="17,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" Width="167" Foreground="#FFF1FF00"><Run Language="es-es" Text="Elija el tipo de letra que quiere para que se vean las lecciones:"/></TextBlock>
+		<TextBlock HorizontalAlignment="Left" Height="38" Margin="17,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163" Foreground="#FFF1FF00"><Run Language="es-es" Text="Elija el tamaño que quiere para el texto de las lecciones:"/></TextBlock>
+		<TextBlock HorizontalAlignment="Left" Margin="17,0,0,145" TextWrapping="Wrap" Width="164" Foreground="#FFF1FF00" Height="32" VerticalAlignment="Bottom"><Run Language="es-es" Text="Elija la voz que desea que use el programa para este usuario:"/></TextBlock>
+		<TextBlock HorizontalAlignment="Left" Margin="18,0,0,86" TextWrapping="Wrap" Width="165" Height="33" VerticalAlignment="Bottom" Foreground="#FFF1FF00"><Run Language="es-es" Text="Elija la velocidad de la voz para este usuario:"/></TextBlock>
+		<TextBlock HorizontalAlignment="Left" Height="35" Margin="17,193,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="159" Foreground="#FFF1FF00"><Run Language="es-es" Text="Elija el c"/><Run Language="es-es" Text="olor de la letra para este usuario:"/></TextBlock>
+		<TextBlock HorizontalAlignment="Left" Margin="17,0,0,199" TextWrapping="Wrap" Width="159" Foreground="#FFF1FF00" Height="35" VerticalAlignment="Bottom"><Run Language="es-es" Text="Elija el c"/><Run Language="es-es" Text="olor del fondo para las lecciones de este usuario:"/></TextBlock>
+		<Button Content="Guardar Preferencias" Height="28" Margin="0,0,28,21" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="130" Name="btnGuardar" Click="btnGuardar_Click" TabIndex="7" GotFocus="btnGuardar_GotFocus" />
+		<TextBlock Height="22" Margin="14,30,0,0" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" Width="167" Foreground="#FFF1FF00"><Run Language="es-es" Text="Escriba su nombre:"/></TextBlock>
+		<TextBox x:Name="txtNombre" Height="22" Margin="200,30,28,0" TextWrapping="Wrap" VerticalAlignment="Top" GotFocus="txtNombre_GotFocus" Unloaded="txtNombre_Unloaded" TabIndex="0" KeyDown="txtNombre_KeyDown" />
+	</Grid>
+</Window>

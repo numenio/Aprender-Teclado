@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- English Translation: Ardeshir Abasi -->
+<!-- Encoding: Unicode (UTF-16); Line endings: CR+LF -->
+<!-- <part[Name]>: chapter name -->
+<!-- <item>[ID]: string ID ( required )-->
+<!-- <item[En]>: English string ( required )-->
+<!-- <item[Tr]>: translated string ( required )-->
+<root Ver="1">
+  <part Name="Common">
+    <item ID="1001" En="OK" Tr="آره"/>
+    <item ID="1002" En="Cancel" Tr="نه"/>
+    <item ID="1003" En="Apply" Tr="تنظیم"/>
+    <item ID="1004" En="Activate" Tr="فعال سازی"/>
+    <item ID="1005" En="Description" Tr="توضیح"/>
+    <item ID="1006" En="Name" Tr="نام"/>
+    <item ID="1007" En="Properties" Tr="خصوصیات"/>
+    <item ID="1008" En="Restore" Tr="بازیابی"/>
+    <item ID="1009" En="Refresh" Tr="تازه کردن"/>
+    <item ID="1010" En="Course" Tr="دوره"/>
+    <item ID="1011" En="Section" Tr="بخش"/>
+    <item ID="1012" En="Lesson" Tr="تمرین"/>
+    <item ID="1013" En="Language" Tr="زبان"/>
+    <item ID="1014" En="Next" Tr="بعدی"/>
+    <item ID="1015" En="Back" Tr="قبلی"/>
+    <item ID="1016" En="Wizard" Tr="اتوماتیک"/>
+    <item ID="1017" En="Finish" Tr="تمام"/>
+    <item ID="1018" En="Preview" Tr="پیش بینی"/>
+    <item ID="1019" En="Customize" Tr="سفارشی کردن"/>
+    <item ID="1020" En="Show" Tr="نمایش"/>
+    <item ID="1021" En="Disable" Tr="غیرفعال"/>
+    <item ID="1022" En="Home page" Tr="صفحه نخست"/>
+    <item ID="1023" En="Exit" Tr="خروج"/>
+    <item ID="1024" En="Change" Tr="تغییر"/>
+    <item ID="1025" En="Remove" Tr="حذف"/>
+    <item ID="1026" En="Assign" Tr="القا"/>
+    <item ID="1027" En="Enable/Disable" Tr="فعال/غیرفعال"/>
+    <item ID="1028" En="On/Off" Tr="روشن/خاموش"/>
+    <item ID="1029" En="Add" Tr="اضافه"/>
+    <item ID="1030" En="Keyboard language" Tr="زبان کیبورد"/>
+    <item ID="1031" En="Main course" Tr="دوره اصلی"/>
+    <item ID="1032" En="Base course" Tr="دوره پایه"/>
+    <item ID="1033" En="Main pad" Tr="کلیدهای اصلی"/>
+    <item ID="1034" En="Numeric pad" Tr="کلیدهای عددی"/>
+    <item ID="1035" En="Advanced" Tr="پیشرفته"/>
+    <item ID="1036" En="Click" Tr="کلیک"/>
+    <item ID="1037" En="Random selection" Tr="انتخاب تصادفی"/>
+    <item ID="1038" En="not specified" Tr=""/>
+    <item ID="1039" En="Hide" Tr=""/>
+    <item ID="1040" En="Wallpaper" Tr=""/>
+  </part>
+  <part Name="Current Lesson View">
+    <item ID="1101" En="Start the lesson" Tr="آغاز"/>
+    <item ID="1102" En="Pause the lesson" Tr="مکث"/>
+    <item ID="1103" En="Restart the lesson, Previous lesson" Tr="شروع دوباره یا تمرین قبلی"/>
+    <item ID="1104" En="Next lesson" Tr="تمرین بعدی"/>
+    <item ID="1105" En="Select course" Tr="انتخاب دوره"/>
+    <item ID="1106" En="Select lesson" Tr="انتخاب تمرین"/>
+    <item ID="1107" En="Lesson length" Tr="طول تمرین"/>
+    <item ID="1108" En="Time typing a one symbol" Tr="زمان تایپ یک نشان"/>
+    <item ID="1109" En="Simple lesson view" Tr="زمینه ساه"/>
+    <item ID="1110" En="Background lesson view" Tr="زمینه ثابت"/>
+    <item ID="1111" En="Animation lesson view" Tr="زمینه متحرک"/>
+  </part>
+  <part Name="Statistics View">
+    <item ID="1201" En="Course statistics" Tr="آمار دوره"/>
+    <item ID="1202" En="Statistics of selected lesson" Tr="آمار درس انتخابی"/>
+    <item ID="1203" En="Select Course" Tr="آنتخاب تمرین"/>
+    <item ID="1204" En="Grouping data" Tr="نحوه دسته بندی"/>
+    <item ID="1205" En="Filter by section" Tr="فیلتر کردن با انتخاب"/>
+    <item ID="1206" En="Index" Tr="فهرست"/>
+    <item ID="1207" En="Date" Tr="تاریخ"/>
+    <item ID="1208" En="WPM" Tr="WPM"/>
+    <item ID="1209" En="CPM" Tr="CPM"/>
+    <item ID="1210" En="Accuracy" Tr="دقت"/>
+    <item ID="1211" En="Duration" Tr="مدت"/>
+    <item ID="1212" En="Title" Tr="نام"/>
+    <item ID="1213" En="Type" Tr="نوع"/>
+    <item ID="1214" En="Accuracy%" Tr="دقت%"/>
+    <item ID="1215" En="Errors" Tr="خطاها"/>
+    <item ID="1216" En="Errors%" Tr="خطاها%"/>
+    <item ID="1217" En="Length" Tr="طول"/>
+    <item ID="1218" En="Rhythm" Tr="نواخت"/>
+    <item ID="1219" En="Char." Tr="حرف"/>
+    <item ID="1220" En="Total" Tr="همه"/>
+    <item ID="1221" En="Arrhythmic" Tr="بی نواخت"/>
+    <item ID="1222" En="Lesson date" Tr="تاریخ تمرین"/>
+    <item ID="1223" En="Speed WPM, words per minute" Tr="سرعت WPM,کلمه در دقیقه"/>
+    <item ID="1224" En="Speed CPM, characters per minute" Tr="سرعت CPM,کاراکتر در دقیقه"/>
+    <item ID="1225" En="Accuracy goal in characters" Tr="درصد دقت در حروف"/>
+    <item ID="1226" En="Lesson duration" Tr="مدت تمرین"/>
+    <item ID="1227" En="Lesson name" Tr="نام تمرین"/>
+    <item ID="1228" En="Lesson type ( letter, word, text etc.)" Tr="نوع تمرین حرف،کلمه،متن"/>
+    <item ID="1229" En="Accuracy goal in percent" Tr="درصد دفت نهایی"/>
+    <item ID="1230" En="Errors in characters" Tr="خطای کاراکترها"/>
+    <item ID="1231" En="Errors in percent" Tr="درصدخطاها"/>
+    <item ID="1232" En="Lesson length" Tr="طول تمرین"/>
+    <item ID="1233" En="Lesson rhythm" Tr="نواخت تمرین"/>
+    <item ID="1234" En="Character name" Tr="کاراکتر"/>
+    <item ID="1235" En="Error characters ( number )" Tr="تعداد خطای کارکتر"/>
+    <item ID="1236" En="Error characters, in percent" Tr="درصد خطای کاراکتر"/>
+    <item ID="1237" En="Total character number" Tr="تعداد کلی کاراکترها"/>
+    <item ID="1238" En="Arrhythmic type in percent" Tr="درصد نوع بی نوختی"/>
+    <item ID="1239" En="Available parameters" Tr="پارامترهای در دسترس"/>
+    <item ID="1240" En="Selected parameters" Tr="پارامترهای انتخابی"/>
+    <item ID="1241" En="Lesson group" Tr="گروه درس"/>
+    <item ID="1242" En="Day group" Tr="گروه روز"/>
+    <item ID="1243" En="Week group" Tr="گروه هفته"/>
+    <item ID="1244" En="Month group" Tr="گروه ماه"/>
+  </part>
+  <part Name="Lesson Editor View">
+    <item ID="1301" En="The text of selected lesson" Tr="متن درس انتخابی"/>
+    <item ID="1302" En="The properties of selected lesson" Tr="خصوصیات تمرین انتخابی"/>
+    <item ID="1303" En="Select the course for editing" Tr="دوره را برای تغییر انتخاب کن"/>
+    <item ID="1304" En="Add a new course" Tr="ایجاد دوره جدید"/>
+    <item ID="1305" En="Remove selected course" Tr="جذف دوره انتخابی"/>
+    <item ID="1306" En="The properties of the selected course" Tr="جزئیات دوره انتخابی"/>
+    <item ID="1307" En="Letters" Tr="حروف"/>
+    <item ID="1308" En="Syllables" Tr="سیلابها"/>
+    <item ID="1309" En="Shift keys" Tr="شیفتیها"/>
+    <item ID="1310" En="Words" Tr="کلمات"/>
+    <item ID="1311" En="Digits, Symbols" Tr="اعدادونشانها"/>
+    <item ID="1312" En="Text" Tr="متن"/>
+    <item ID="1313" En="Additional texts" Tr="متنهای اضافی"/>
+    <item ID="1314" En="Basics" Tr="پایه ها"/>
+  </part>
+  <part Name="Dialog About">
+    <item ID="1401" En="About" Tr="درباه"/>
+    <item ID="1402" En="Version" Tr="نسخه"/>
+    <item ID="1403" En="Internet" Tr="وب"/>
+    <item ID="1404" En="E-Mail" Tr="ای میل"/>
+    <item ID="1405" En="Update" Tr="بروزآوری"/>
+    <item ID="1406" En="Help" Tr="کمک"/>
+    <item ID="1407" En="On-line Test" Tr="تست آن لاین"/>
+    <item ID="1408" En="Instructions" Tr="توصیه ها"/>
+  </part>
+  <part Name="Dialog Confirm">
+    <item ID="1501" En="Confirm" Tr="تایید"/>
+    <item ID="1502" En="Message" Tr="پیام"/>
+    <item ID="1503" En="Yes" Tr="بله"/>
+    <item ID="1504" En="No" Tr="نه"/>
+    <item ID="1505" En="Bad path name" Tr="مسیر اشتباه"/>
+  </part>
+  <part Name="Dialog Feedback">
+    <item ID="1601" En="Feedback" Tr="بازخورد"/>
+    <item ID="1602" En="(not required)" Tr="(لازم نیست)"/>
+    <item ID="1603" En="Message" Tr="پیام"/>
+    <item ID="1604" En="Send" Tr="ارسال"/>
+    <item ID="1605" En="Include system info" Tr="شامل اطلاعات سیستمی"/>
+  </part>
+  <part Name="Dialog New user">
+    <item ID="1701" En="New User" Tr="کاربر جدید"/>
+    <item ID="1702" En="User Properties" Tr="جزئیات کاربر"/>
+    <item ID="1703" En="Nickname" Tr="نام مستعار"/>
+    <item ID="1704" En="Full Name" Tr="نام کامل"/>
+    <item ID="1705" En="Picture" Tr="عکس"/>
+    <item ID="1706" En="User's data path" Tr="آدرس اطلاعت کاربر"/>
+    <item ID="1707" En="Select user's data path" Tr=" انتخاب آدرس اطلاعت کاربر"/>
+    <item ID="1708" En="Lessons path" Tr="آدرس تمرینها"/>
+    <item ID="1709" En="Select lessons path" Tr="انتخاب آدرس تمرینها"/>
+  </part>
+  <part Name="Dialog Select User">
+    <item ID="1801" En="Select User" Tr="انتخاب کاربر"/>
+  </part>
+  <part Name="Dialog Select Avatars">
+    <item ID="1901" En="Select Picture" Tr="انتخاب عکس"/>
+    <item ID="1902" En="Current Picture" Tr="عکس حاضر"/>
+  </part>
+  <part Name="Dialog Confirm Delete User">
+    <item ID="2001" En="Confirm Delete User" Tr="حذف کاربر"/>
+    <item ID="2002" En="Are you sure you want to delete this user?" Tr="آیا مطمئن هستید؟?"/>
+  </part>
+  <part Name="Dialog Confirm Change Lesson">
+    <item ID="2101" En="Confirmation" Tr="تایید"/>
+    <item ID="2102" En="Do you want to save changes?" Tr="تغییرات ذخیره شود؟"/>
+  </part>
+  <part Name="Dialog New Lesson">
+    <item ID="2201" En="New Lesson" Tr="تمرین جدید"/>
+    <item ID="2202" En="Lesson Properties" Tr="جزئیات تمرین"/>
+    <item ID="2203" En="Lesson Title" Tr="نام تمرین"/>
+    <item ID="2204" En="Type a new section or choose from the list" Tr="یک بخش جدید بنویس یا از لیست انتخاب کن"/>
+    <item ID="2205" En="Lesson Type" Tr="نوع تمرین"/>
+    <item ID="2206" En="Maximum lesson length (characters)" Tr=""/>
+  </part>
+  <part Name="Dialog New Course">
+    <item ID="2301" En="New Course" Tr="دوره جدید"/>
+    <item ID="2302" En="Course Properties" Tr="جزییات دوره"/>
+    <item ID="2303" En="Course Title" Tr="نام دوره"/>
+  </part>
+  <part Name="Dialog New Section">
+    <item ID="3601" En="New Section" Tr="بخش جدید"/>
+    <item ID="3602" En="Section Properties" Tr="جزییات بخش"/>
+    <item ID="3603" En="Section Title" Tr="نام بخش"/>
+  </part>
+  <part Name="Dialog Results">
+    <item ID="2401" En="Results" Tr="نتایج"/>
+    <item ID="2402" En="Rating" Tr="رتبه"/>
+    <item ID="2403" En="Characters" Tr="کاراکترها"/>
+    <item ID="2404" En="Progress" Tr="پیشرفت"/>
+    <item ID="2405" En="Repeat" Tr="تکرار"/>
+    <item ID="2406" En="Next" Tr="بعدی"/>
+    <item ID="2407" En="Current" Tr="کنونی"/>
+    <item ID="2408" En="Previous" Tr="قبلی"/>
+    <item ID="2409" En="Space" Tr="فاصله"/>
+    <item ID="2410" En="All" Tr="همه"/>
+    <item ID="2411" En="Records" Tr="رکوردها"/>
+    <item ID="2412" En="Speed" Tr="سرعت"/>
+    <item ID="2413" En="characters per minute" Tr="کاراکتر در دقیقه"/>
+    <item ID="2414" En="characters, in percents" Tr="درصد کاراکترها"/>
+    <item ID="2415" En="Beginner" Tr="مبتدی"/>
+    <item ID="2416" En="Good" Tr="خوب"/>
+    <item ID="2417" En="Perfect" Tr="عالی"/>
+    <item ID="2418" En="Champion" Tr="قهرمان"/>
+    <item ID="2419" En="Wrong input" Tr="ورود اشتباه"/>
+    <item ID="2420" En="Arrhythmic type" Tr="نوع بی نواختی"/>
+  </part>
+  <part Name="Dialog Options">
+    <item ID="2501" En="Options" Tr="تنظیمات"/>
+    <item ID="2502" En="General" Tr="عمومی"/>
+    <item ID="2503" En="Themes" Tr="پوسته"/>
+    <item ID="2504" En="Keyboard" Tr="کیبورد"/>
+    <item ID="2505" En="Shortcut" Tr="میانبر"/>
+    <item ID="2506" En="Language" Tr="زبان"/>
+    <item ID="2507" En="Users" Tr="کاربرها"/>
+    <item ID="2508" En="Sound" Tr="صدا"/>
+    <item ID="2509" En="Statistics" Tr="آمار"/>
+  </part>
+  <part Name="Option Tab General">
+    <item ID="2601" En="Animation" Tr="متحرک"/>
+    <item ID="2602" En="Font" Tr="قلم"/>
+    <item ID="2603" En="Background" Tr="پس زمینه"/>
+    <item ID="2604" En="Text" Tr="متن"/>
+    <item ID="2605" En="Correct character" Tr="کاراکتر درست"/>
+    <item ID="2606" En="Wrong character" Tr="کاراکتر اشتباه"/>
+    <item ID="2607" En="Arrhythmic type" Tr="نوع بی نواختی "/>
+    <item ID="2608" En="Colors" Tr="رنگها"/>
+    <item ID="2609" En="Invert colors" Tr=""/>
+    <item ID="2610" En="Hide pictures" Tr=""/>
+  </part>
+  <part Name="Option Tab Users">
+    <item ID="2701" En="Full Name" Tr="نام کامل"/>
+    <item ID="2702" En="Current User" Tr="کاربر کنونی"/>
+  </part>
+  <part Name="Option Tab Language">
+    <item ID="2802" En="Current Language" Tr="زبان کنونی"/>
+  </part>
+  <part Name="Option Tab Keyboard">
+    <item ID="2901" En="Keyboard Type" Tr="نوع کیبورد"/>
+    <item ID="2902" En="Color Scheme" Tr="نقشه ی رنگها"/>
+    <item ID="2903" En="Layout" Tr="محیط"/>
+    <item ID="2904" En="Finger Placement" Tr="محل انگشتها"/>
+    <item ID="2905" En="Keyboard Layouts" Tr="محیط کیبورد"/>
+    <item ID="2906" En="Contrast Keys" Tr="رنگ زمینه کلیدها"/>
+    <item ID="2907" En="Keyboard View" Tr="کیبوردها"/>
+    <item ID="2908" En="Scheme" Tr="نقشه"/>
+    <item ID="2909" En="Type" Tr="نوع"/>
+    <item ID="2910" En="3D" Tr="سه بعدی"/>
+    <item ID="2911" En="Flat" Tr="صاف"/>
+  </part>
+  <part Name="Option Tab Themes">
+    <item ID="3001"  En="Add From Web" Tr="اضافه کردن از وب"/>
+  </part>
+  <part Name="Option User Level">
+    <item ID="3801" En="For continue lesson" Tr=""/>
+    <item ID="3802" En="No requirements" Tr=""/>
+    <item ID="3803" En="Requires the right character type" Tr=""/>
+    <item ID="3804" En="Requires the fixing the wrong characters" Tr=""/>
+    <item ID="3805" En="Level" Tr=""/>
+    <item ID="3806" En="Beginner" Tr=""/>
+    <item ID="3807" En="Advanced" Tr=""/>
+    <item ID="3808" En="Expert" Tr=""/>
+    <item ID="3809" En="Lesson View" Tr=""/>
+    <item ID="3810" En="One line, static cursor" Tr=""/>
+    <item ID="3811" En="One line, moving cursor" Tr=""/>
+    <item ID="3812" En="Multiline text" Tr=""/>
+    <item ID="3813" En="Base position" Tr=""/>
+    <item ID="3814" En="Hands" Tr=""/>
+  </part>
+  <part Name="Option Tab Shortcuts">
+    <item ID="3101" En="Shortcut currently used by" Tr="میانبر اکتنون استفاده می شود توسط"/>
+    <item ID="3102" En="Window" Tr="پنجره"/>
+    <item ID="3103" En="Command" Tr="دستور"/>
+    <item ID="3104" En="Key" Tr="کلید"/>
+    <item ID="3105" En="All" Tr="همه"/>
+    <item ID="3106" En="Current Lesson" Tr="تمرین کنونی"/>
+    <item ID="3107" En="Lesson Editor" Tr="ویرایشگر تمرین"/>
+    <item ID="3108" En="Pause" Tr="مکث"/>
+    <item ID="3109" En="Re-Start" Tr="شروع دوباره"/>
+    <item ID="3110" En="About" Tr="درباه"/>
+    <item ID="3111" En="Close" Tr="بستن"/>
+    <item ID="3112" En="Minimize" Tr="کوچک"/>
+    <item ID="3113" En="Maximize" Tr="بزرگ"/>
+    <item ID="3114" En="Tray" Tr="محو"/>
+    <item ID="3115" En="Help" Tr="کمک"/>
+    <item ID="3116" En="Show current lesson" Tr="نمایش تمرین کنونی"/>
+    <item ID="3117" En="Show course statistics" Tr="نمایش آمار دوره"/>
+    <item ID="3118" En="Show lesson editor" Tr="نماییش ویرایشگر متن"/>
+    <item ID="3119" En="Start/Pause current lesson" Tr="شروع و مکث تمرین"/>
+    <item ID="3120" En="Back Start to the lesson" Tr="شروع دوباره تمرین"/>
+    <item ID="3121" En="Show/Hide virtual keyboard" Tr="نمایش و محو کردن کیبورد"/>
+    <item ID="3122" En="Open 'Help'" Tr="باز کردن کمک"/>
+    <item ID="3123" En="Open 'About'" Tr="باز کردن درباره"/>
+    <item ID="3124" En="Open 'Options'" Tr="باز کردن تنظیمات "/>
+    <item ID="3125" En="Close window" Tr="بستن پنجره"/>
+    <item ID="3126" En="Minimize window" Tr="کوچک کردن پنجره به تسکبار"/>
+    <item ID="3127" En="Maximize window" Tr="بزرگ کردن پنجره"/>
+    <item ID="3128" En="Minimize to tray" Tr="محو کردن پینچره"/>
+    <item ID="3129" En="Speed statistics" Tr="آمار سرعت"/>
+    <item ID="3130" En="Error statistics" Tr="آمار خطاها"/>
+    <item ID="3131" En="Duration statistics" Tr="آمار مدت"/>
+    <item ID="3132" En="Next diagram" Tr="نمودار بعدی"/>
+    <item ID="3133" En="Previous diagram" Tr="نمودار قبلی"/>
+    <item ID="3134" En="Next dot diagram" Tr="نقطه بعدی نمودار"/>
+    <item ID="3135" En="Previous dot diagram" Tr="نقطه قبلی نمودار"/>
+    <item ID="3136" En="Delete dot diagram" Tr="حذف نقطه نمودار"/>
+    <item ID="3137" En="Select all" Tr="انتخاب همه"/>
+    <item ID="3138" En="Show speed statistics" Tr="نمایش آمار سرعت"/>
+    <item ID="3139" En="Show error statistics" Tr="نمایش آمار خطاها"/>
+    <item ID="3140" En="Show duration statistics" Tr="نامیش آمار مدتها"/>
+    <item ID="3141" En="Show next diagram" Tr="نمایش نمودار بعدی"/>
+    <item ID="3142" En="Show previous diagram" Tr="نمایش نمودار قبلی "/>
+    <item ID="3143" En="Select next Diagram point" Tr="انتخاب نقطه بعدی نمودار"/>
+    <item ID="3144" En="Select previous diagram Point" Tr="انتخاب نقطه قبلی نمودار"/>
+    <item ID="3145" En="Delete diagram selected dot" Tr="حذف نقاط انتخابی نمودار"/>
+    <item ID="3146" En="Select all diagram dots" Tr="انتخاب همه ی نقاط نمودار"/>
+    <item ID="3147" En="Lessons" Tr="تمرینها"/>
+    <item ID="3148" En="Create lesson" Tr="ایجاد تمرین"/>
+    <item ID="3149" En="Delete lesson" Tr="حدف تمرین"/>
+    <item ID="3150" En="Activate lesson" Tr="فعال کردن تمرن"/>
+    <item ID="3151" En="Switch on Lesson Editor" Tr="رفتن به ویرایشگر متن"/>
+    <item ID="3152" En="Create a new lesson" Tr="ایجاد تمرین جدید"/>
+    <item ID="3153" En="Delete current lesson" Tr="حذف تمرین کنونی"/>
+    <item ID="3154" En="Activate current lesson" Tr="فعال کردن تمرین کنونی"/>
+    <item ID="3155" En="Switch on Lesson Editor" Tr="رفتن به ویرایشگر تمرینها"/>
+    <item ID="3156" En="Lesson editor" Tr="ویرایشگر تمرینها"/>
+    <item ID="3157" En="Save lesson" Tr="ذخیره کردن تمرین"/>
+    <item ID="3158" En="Switch on lesson list" Tr="رفتن به لیست تمرینها"/>
+    <item ID="3159" En="Save current lesson" Tr="ذخیره کردن تمرین کنونی"/>
+    <item ID="3160" En="Switch on lesson list" Tr="رفتن به لیست تمرینها"/>
+    <item ID="3161" En="Insert lesson" Tr="درج تمرین"/>
+    <item ID="3162" En="Insert lesson from file" Tr="درج تمرین از فایل"/>
+    <item ID="3163" En="Rename lesson" Tr="تغییر نام تمرین"/>
+    <item ID="3164" En="Rename current item" Tr="تغییر نام انتخابی"/>
+    <item ID="3165" En="Import Lesson(s)" Tr=""/>
+    <item ID="3166" En="Create lesson(s) from files" Tr=""/>
+    <item ID="3167" En="Show Tips" Tr=""/>
+    <item ID="3168" En="Show tips panel for beginners" Tr=""/>
+    <item ID="3169" En="Hide Tips" Tr=""/>
+    <item ID="3170" En="Hide tips panel for beginners" Tr=""/>
+  </part>
+  <part Name="Option Tab Sound">
+    <item ID="3201" En="Interface" Tr="واسط"/>
+    <item ID="3202" En="Lessons" Tr="تمرینها"/>
+    <item ID="3203" En="Action" Tr="فعالیت"/>
+    <item ID="3204" En="Volume" Tr="صدا"/>
+    <item ID="3205" En="Test" Tr="امتحان"/>
+  </part>
+  <part Name="Option Tab Statistics">
+    <item ID="3301" En="Speed Unit" Tr="واحد سرعت"/>
+    <item ID="3302" En="WPM ( words per minute )" Tr="WPM ( سرعت در دقیقه )"/>
+    <item ID="3303" En="CPM ( characters per minute )" Tr="CPM ( کاراکتر دردقیقه )"/>
+  </part>
+  <part Name="Confirm dialogs">
+    <item ID="3401" En="Field user nick is empty." Tr="نام مستعار وارد نشده"/>
+    <item ID="3402" En="Wrong path name." Tr="آدرس اشتباه"/>
+    <item ID="3403" En="user already exist in the list." Tr="این نام وجود دارد"/>
+    <item ID="3404" En="Access is denied. Try another folder, please." Tr="دسترسی مقدور نیست لطفا پوشه دیگری را انتخاب کنید"/>
+    <item ID="3405" En="CAPS LOCK was pressed." Tr="روشن استcaps lock"/>
+    <item ID="3408" En="NUM LOCK wasn't pressed." Tr=""/>
+    <item ID="3406" En="Lesson name is empty." Tr="نام تمرین وارد نشده"/>
+    <item ID="3407" En="Do you really want to remove whole course?" Tr="آیا همه ی دروه های جذف شود؟"/>
+  </part>
+  <part Name="Tips Panel">
+    <item ID="3701" En="Left" Tr=""/>
+    <item ID="3702" En="Right" Tr=""/>
+    <item ID="3703" En="little finger" Tr=""/>
+    <item ID="3704" En="ring finger" Tr=""/>
+    <item ID="3705" En="middle finger" Tr=""/>
+    <item ID="3706" En="index finger" Tr=""/>
+    <item ID="3707" En="thumb" Tr=""/>
+    <item ID="3708" En="Put your fingers in the base position" Tr=""/> 
+    <item ID="3709" En="Start by pressing any key." Tr=""/>
+  </part>
+  <part Name="Tray">
+    <item ID="3501" En="Tell a friend" Tr="گفتن به یک دوست"/>
+    <item ID="3502" En="Hi, I found an interesting new freeware called Rapid Typing Tutor that you really should take a look at" Tr="سلام،من یک برنامه رایگان پیدار کردم که تو حتما باید ببینیش."/>
+  </part>
+</root>

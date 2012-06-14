@@ -1,0 +1,7 @@
+C:\Users\Win-G\Documents\Expression\Blend 4\Projects\Aprender-Teclado\Modelado-Situación\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Win-G\Documents\Expression\Blend 4\Projects\Aprender-Teclado\Modelado-Situación\bin\Debug\Lógica-Aplicación.dll
+C:\Users\Win-G\Documents\Expression\Blend 4\Projects\Aprender-Teclado\Modelado-Situación\bin\Debug\Lógica-Aplicación.pdb
+C:\Users\Win-G\Documents\Expression\Blend 4\Projects\Aprender-Teclado\Modelado-Situación\bin\Debug\Datos.dll
+C:\Users\Win-G\Documents\Expression\Blend 4\Projects\Aprender-Teclado\Modelado-Situación\bin\Debug\Datos.pdb
+C:\Users\Win-G\Documents\Expression\Blend 4\Projects\Aprender-Teclado\Modelado-Situación\obj\Debug\Lógica-Aplicación.dll
+C:\Users\Win-G\Documents\Expression\Blend 4\Projects\Aprender-Teclado\Modelado-Situación\obj\Debug\Lógica-Aplicación.pdb

@@ -1,0 +1,26 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	x:Class="Aprender_Teclado.elementoDeLista"
+	x:Name="UserControl" Height="33" Width="383.667">
+
+	<Grid x:Name="LayoutRoot" Cursor="Hand">
+		<Grid x:Name="completo" HorizontalAlignment="Left" Height="21.6" Margin="6.611,0,0,7.337" VerticalAlignment="Bottom" Width="19.5">
+			<Path Data="M19.25,418 C21.188267,421.87653 17.502127,422.625 23.625,422.625 23.625,417.81924 24.314799,414.62797 21.21875,410.49991 20.336901,409.32411 17.937515,407.64587 17.062355,407.15613 17.042317,407.14492 13.479961,410.68767 14,411.25 14.041667,411.25 18.206234,415.91247 19.25,418 z" HorizontalAlignment="Left" Margin="0,8.094,0,0" Stretch="Fill" Stroke="#FF48FF00" Width="10.743" Fill="#FF48FF00"/>
+			<Path Data="M24.583333,423.58333 C24.625605,423.58334 30.416654,412.17769 30.854119,411.83396 31.166594,411.30274 39.677924,400.44751 40.103869,400.02157 39.290936,400.33456 35.567275,400.89601 34.854522,400.89601 33.98936,400.89601 28.625174,406.58381 27.12521,408.00046 26.228452,408.84741 23.382053,413.76385 22.583333,414.08333 22.517422,414.4788 22.103219,414.69414 22.041667,415.125 21.970013,415.62657 22.011254,416.03711 22.083333,416.54167 22.224823,417.5321 22.664216,418.30801&#xa;22.875,419.29167 22.971121,419.74023 22.989032,420.0614 23.208333,420.5 23.378245,420.83982 23.648631,421.25715 23.875,421.625 24.219302,422.18449 24.372277,423.11534 24.583333,423.58333 z" Fill="#FF48FF00" Margin="7.389,0,0,0" Stretch="Fill" Stroke="#FF48FF00"/>
+		</Grid>
+		<Rectangle x:Name="fondo" Margin="0,0,-0.333,4" RadiusY="8.667" RadiusX="8.667">
+			<Rectangle.Fill>
+				<LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+					<GradientStop Color="#AA0A0A0C" Offset="0.517"/>
+					<GradientStop Color="#90121254" Offset="0.875"/>
+					<GradientStop Color="#AA03032B" Offset="1"/>
+				</LinearGradientBrush>
+			</Rectangle.Fill>
+		</Rectangle>
+		<TextBlock x:Name="cajaTexto" Margin="35.667,0.663,26.667,4.667" TextWrapping="Wrap" Text="TextBlock" FontSize="10.667" Foreground="#FFF3D929"/>
+	</Grid>
+</UserControl>

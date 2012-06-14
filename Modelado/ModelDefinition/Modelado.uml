@@ -1,0 +1,1431 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
+  dslVersion="1.0.0.0"
+  Id="69c5c7da-732b-4de3-8760-63d1e87b2d92"
+  name="Modelado" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <activity
+        Id="ecf346fe-0fe3-454a-8402-9904b85dfcfc"
+        name="Actividades"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="acc23b2b-531f-4f67-96be-f2649ac4aa88"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="1fc99d14-8d9d-428c-8bdd-1c4f7e51eb71"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="837e7c15-8cdf-487d-975d-34e842feffcc"
+                  LastKnownName="Cargar idioma interfaz"
+                  LastKnownLocation="Modelado.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="837e7c15-8cdf-487d-975d-34e842feffcc"
+            name="Cargar idioma interfaz"
+            isLeaf="false" />
+          <opaqueAction
+            Id="6f68ad99-3568-4f83-837f-ee7a0dffe1a8"
+            name="Preferencias:&#xD;&#xA;Elegir nivel básico, intermedio, experto&#xD;&#xA;Tamaño de letra y color&#xD;&#xA;sintetizador y velocidad&#xD;&#xA;última lección actividad&#xD;&#xA;por tiempo o libre&#xD;&#xA;cantidad de segundos en act por tiempo"
+            isLeaf="false" />
+          <opaqueAction
+            Id="43cc2a2a-9f49-4aeb-b52d-09322f632b11"
+            name="Elegir por tiempo o libre"
+            isLeaf="false" />
+          <opaqueAction
+            Id="4320365e-d1ed-427d-a8db-39070fb26954"
+            name="Cargar desde preferencias básico, intermedio, experto"
+            isLeaf="false" />
+          <opaqueAction
+            Id="5d1330c9-f952-4fab-b7bd-2b834a251153"
+            name="Ver premios"
+            isLeaf="false" />
+          <opaqueAction
+            Id="23514cf9-1fae-4720-9549-86264272c642"
+            name="Cargar índice de lecciones C:\Users\Win-G\Documents\Expression\Blend 4\Projects\Aprender-Teclado\Recursos\Lecciones\Español.xml&#xD;&#xA;&lt;!-- &lt;item&gt;[ID]&#xD;&#xA;&lt;!-- &lt;item&gt;[Tipo] Principiante, experto, intermedio&#xD;&#xA;&lt;!-- &lt;item&gt;[Path]&#xD;&#xA;&lt;!-- &lt;item&gt;[Autor]"
+            isLeaf="false" />
+          <opaqueAction
+            Id="33e074ca-f21f-4f6c-aec1-0a001171c64f"
+            name="Ver en preferencias hasta qué lección se llegó"
+            isLeaf="false" />
+          <opaqueAction
+            Id="ec30ee43-b413-4709-9bb6-2ed7dd67be8f"
+            name="Cargar lección desde Path de arriba:&#xD;&#xA;&lt;!-- &lt;item&gt;[ID]&#xD;&#xA;&lt;!-- &lt;item&gt;[Nombre]&#xD;&#xA;&lt;!-- &lt;item&gt;[Sección]:&#xD;&#xA;     Letras&#xD;&#xA;     Palabras&#xD;&#xA;     Teclas Shift&#xD;&#xA;     Números&#xD;&#xA;     Números y Símbolos&#xD;&#xA;     Sílabas&#xD;&#xA;     &#xD;&#xA;&lt;!-- &lt;item&gt;[Texto]"
+            isLeaf="false" />
+          <opaqueAction
+            Id="5757e3de-12e4-4b19-91b8-0c8fc3e61ff7"
+            name="Vista de lecciones:&#xD;&#xA;Seleccionar Curso&#xD;&#xA;Seleccionar Lección"
+            isLeaf="false" />
+          <opaqueAction
+            Id="7cbf693b-0c7f-4ded-a8ed-3e88a5c906b7"
+            name="Estadísticas:&#xD;&#xA;idUsuario&#xD;&#xA;idActividad&#xD;&#xA;idLección&#xD;&#xA;fecha&#xD;&#xA;hora&#xD;&#xA;caracteresMinuto&#xD;&#xA;aciertos&#xD;&#xA;% aciertos&#xD;&#xA;errores&#xD;&#xA;% errores&#xD;&#xA;duración"
+            isLeaf="false" />
+          <opaqueAction
+            Id="3094062d-6f03-4c22-a06a-1270281e4954"
+            name="Editor de lecciones:&#xD;&#xA;Texto&#xD;&#xA;Nombre&#xD;&#xA;Sección"
+            isLeaf="false" />
+          <opaqueAction
+            Id="1efffcc5-f160-43c5-9c6a-2be1baf5a4f6"
+            name="Loggin usuario"
+            isLeaf="false" />
+          <opaqueAction
+            Id="41cb6912-bf9f-4e59-95d0-340175358fd7"
+            name="Comenzar la lección, pausarla, recomenzar, detenerla"
+            isLeaf="false" />
+          <opaqueAction
+            Id="b7338f93-ca30-4270-8f65-128d4856b135"
+            name="ver cantidad de estrellas y estadísticas"
+            isLeaf="false" />
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <interaction
+        Id="37ebea1c-db63-4821-8fcd-1f9ac539e867"
+        name="Secuencia"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <fragments>
+          <messageOccurrenceSpecification
+            Id="b9025b2f-47a1-46c1-8e21-cf469525eaf9"
+            name="MessageOccurrenceSpecification20">
+            <covered>
+              <lifelineMoniker
+                Id="9e8bf666-0ac9-49c8-9b6a-0f94e05ffa5b"
+                LastKnownName="Usuario"
+                LastKnownLocation="Modelado.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="3eb76c19-fdb2-4856-84dd-7f2271b1812c"
+            name="MessageOccurrenceSpecification19">
+            <covered>
+              <lifelineMoniker
+                Id="3d16bfb7-44be-49f7-80ad-766addfec994"
+                LastKnownName="VentanaPPal"
+                LastKnownLocation="Modelado.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="b3d3174b-c05d-4748-98cd-88a163e19980"
+            name="MessageOccurrenceSpecification24">
+            <covered>
+              <lifelineMoniker
+                Id="3d16bfb7-44be-49f7-80ad-766addfec994"
+                LastKnownName="VentanaPPal"
+                LastKnownLocation="Modelado.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="ae66aa44-1610-438a-9b7c-1878919b080b"
+            name="MessageOccurrenceSpecification15">
+            <covered>
+              <lifelineMoniker
+                Id="3d16bfb7-44be-49f7-80ad-766addfec994"
+                LastKnownName="VentanaPPal"
+                LastKnownLocation="Modelado.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="f4e32ee0-cd23-4fc8-a754-ecd9eb39cbee"
+            name="MessageOccurrenceSpecification25">
+            <covered>
+              <lifelineMoniker
+                Id="a870d4f1-f7e2-4cbf-8ba5-1d2b07103241"
+                LastKnownName="AdminActividades"
+                LastKnownLocation="Modelado.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="bb76968b-b318-45a4-ab80-8c8d4b7b2ce8"
+            name="MessageOccurrenceSpecification11">
+            <covered>
+              <lifelineMoniker
+                Id="a870d4f1-f7e2-4cbf-8ba5-1d2b07103241"
+                LastKnownName="AdminActividades"
+                LastKnownLocation="Modelado.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="e84b2b25-f981-4437-9ce9-381201bc2b41"
+            name="MessageOccurrenceSpecification16">
+            <covered>
+              <lifelineMoniker
+                Id="9e8bf666-0ac9-49c8-9b6a-0f94e05ffa5b"
+                LastKnownName="Usuario"
+                LastKnownLocation="Modelado.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="6f9b06da-cc9b-483a-9e7a-822306a7551b"
+            name="MessageOccurrenceSpecification18">
+            <covered>
+              <lifelineMoniker
+                Id="3d16bfb7-44be-49f7-80ad-766addfec994"
+                LastKnownName="VentanaPPal"
+                LastKnownLocation="Modelado.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="9d2d78a4-d990-4f49-9e27-61da0e3c88f2"
+            name="MessageOccurrenceSpecification21">
+            <covered>
+              <lifelineMoniker
+                Id="3d16bfb7-44be-49f7-80ad-766addfec994"
+                LastKnownName="VentanaPPal"
+                LastKnownLocation="Modelado.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="82bbb36e-51f6-452f-8447-bb80ee2b1873"
+            name="MessageOccurrenceSpecification28">
+            <covered>
+              <lifelineMoniker
+                Id="a870d4f1-f7e2-4cbf-8ba5-1d2b07103241"
+                LastKnownName="AdminActividades"
+                LastKnownLocation="Modelado.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="d5fd766c-5abd-4d6e-bd79-949e7d07467c"
+            name="MessageOccurrenceSpecification26">
+            <covered>
+              <lifelineMoniker
+                Id="c7b7240a-524d-4781-84a6-c882f83b0589"
+                LastKnownName="Actividad"
+                LastKnownLocation="Modelado.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="dcba7cea-ca68-4cd5-a62d-e3af6ea03d76"
+            name="MessageOccurrenceSpecification22">
+            <covered>
+              <lifelineMoniker
+                Id="a870d4f1-f7e2-4cbf-8ba5-1d2b07103241"
+                LastKnownName="AdminActividades"
+                LastKnownLocation="Modelado.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="56c402d8-a023-4884-b165-82e3071bcd10"
+            name="MessageOccurrenceSpecification17">
+            <covered>
+              <lifelineMoniker
+                Id="9e8bf666-0ac9-49c8-9b6a-0f94e05ffa5b"
+                LastKnownName="Usuario"
+                LastKnownLocation="Modelado.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="53caab63-fcdc-49aa-95b8-8e11a69c83ae"
+            name="MessageOccurrenceSpecification23">
+            <covered>
+              <lifelineMoniker
+                Id="a870d4f1-f7e2-4cbf-8ba5-1d2b07103241"
+                LastKnownName="AdminActividades"
+                LastKnownLocation="Modelado.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="ae7355dd-07cd-4590-916d-1ab6a5f15dd5"
+            name="MessageOccurrenceSpecification27">
+            <covered>
+              <lifelineMoniker
+                Id="c7b7240a-524d-4781-84a6-c882f83b0589"
+                LastKnownName="Actividad"
+                LastKnownLocation="Modelado.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="36711eb0-2337-4c60-9e67-b9fef1d6c2d6"
+            name="MessageOccurrenceSpecification13">
+            <covered>
+              <lifelineMoniker
+                Id="9e8bf666-0ac9-49c8-9b6a-0f94e05ffa5b"
+                LastKnownName="Usuario"
+                LastKnownLocation="Modelado.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="f7698fca-de82-4ef0-8319-72d03eefc931"
+            name="MessageOccurrenceSpecification14">
+            <covered>
+              <lifelineMoniker
+                Id="3d16bfb7-44be-49f7-80ad-766addfec994"
+                LastKnownName="VentanaPPal"
+                LastKnownLocation="Modelado.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="10465fc8-ab91-4a20-868e-f377e0092175"
+            name="MessageOccurrenceSpecification3">
+            <covered>
+              <lifelineMoniker
+                Id="3d16bfb7-44be-49f7-80ad-766addfec994"
+                LastKnownName="VentanaPPal"
+                LastKnownLocation="Modelado.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="5bb65381-f4e2-4144-9d57-30bf7e7564c4"
+            name="MessageOccurrenceSpecification4">
+            <covered>
+              <lifelineMoniker
+                Id="9e8bf666-0ac9-49c8-9b6a-0f94e05ffa5b"
+                LastKnownName="Usuario"
+                LastKnownLocation="Modelado.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="3d0e0d14-4778-421f-b896-7d86519ea68e"
+            name="MessageOccurrenceSpecification1">
+            <covered>
+              <lifelineMoniker
+                Id="9e8bf666-0ac9-49c8-9b6a-0f94e05ffa5b"
+                LastKnownName="Usuario"
+                LastKnownLocation="Modelado.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="48af5c3a-2071-41cb-ae39-a9ad3974b43a"
+            name="MessageOccurrenceSpecification10">
+            <covered>
+              <lifelineMoniker
+                Id="a870d4f1-f7e2-4cbf-8ba5-1d2b07103241"
+                LastKnownName="AdminActividades"
+                LastKnownLocation="Modelado.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="51c995d8-f841-4c16-ae5c-a868cc8b9eba"
+            name="MessageOccurrenceSpecification9">
+            <covered>
+              <lifelineMoniker
+                Id="3d16bfb7-44be-49f7-80ad-766addfec994"
+                LastKnownName="VentanaPPal"
+                LastKnownLocation="Modelado.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="81fc698c-b3d0-4eaf-a7ed-f3c01a1fef95"
+            name="MessageOccurrenceSpecification2">
+            <covered>
+              <lifelineMoniker
+                Id="3d16bfb7-44be-49f7-80ad-766addfec994"
+                LastKnownName="VentanaPPal"
+                LastKnownLocation="Modelado.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="b97d53ce-f30c-456a-9de5-d0e6de02bee2"
+            name="MessageOccurrenceSpecification12">
+            <covered>
+              <lifelineMoniker
+                Id="3d16bfb7-44be-49f7-80ad-766addfec994"
+                LastKnownName="VentanaPPal"
+                LastKnownLocation="Modelado.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="51b704b6-e3da-4a6a-8dd9-f45f721838c9"
+            name="BehaviorExecutionSpecification1">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="3d16bfb7-44be-49f7-80ad-766addfec994"
+                LastKnownName="VentanaPPal"
+                LastKnownLocation="Modelado.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="1f69e8d2-c3e3-4641-be46-edb4921268c7"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="Modelado.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="f072a14f-793b-4158-a3f2-b4c20ed1f81e"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="Modelado.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="81fc698c-b3d0-4eaf-a7ed-f3c01a1fef95"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="Modelado.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="10465fc8-ab91-4a20-868e-f377e0092175"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="Modelado.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="f072a14f-793b-4158-a3f2-b4c20ed1f81e"
+            name="ExecutionOccurrenceSpecification1">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="249b39c3-0c62-4219-8c78-72cf44fb8740"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Modelado.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="3d16bfb7-44be-49f7-80ad-766addfec994"
+                LastKnownName="VentanaPPal"
+                LastKnownLocation="Modelado.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="1f69e8d2-c3e3-4641-be46-edb4921268c7"
+            name="ExecutionOccurrenceSpecification2">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="c705298a-e6ad-4b8c-ac7a-0683178ac273"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Modelado.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="3d16bfb7-44be-49f7-80ad-766addfec994"
+                LastKnownName="VentanaPPal"
+                LastKnownLocation="Modelado.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="a5a1f546-b8b3-4c26-bcc0-e0816e75d9ef"
+            name="BehaviorExecutionSpecification4">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="3d16bfb7-44be-49f7-80ad-766addfec994"
+                LastKnownName="VentanaPPal"
+                LastKnownLocation="Modelado.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="36edf8cb-5d1c-4003-b551-029037451e97"
+                LastKnownName="ExecutionOccurrenceSpecification8"
+                LastKnownLocation="Modelado.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="84cea259-d484-45f0-a729-0273a8625ea1"
+                LastKnownName="ExecutionOccurrenceSpecification7"
+                LastKnownLocation="Modelado.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="f7698fca-de82-4ef0-8319-72d03eefc931"
+                LastKnownName="MessageOccurrenceSpecification14"
+                LastKnownLocation="Modelado.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="51c995d8-f841-4c16-ae5c-a868cc8b9eba"
+                LastKnownName="MessageOccurrenceSpecification9"
+                LastKnownLocation="Modelado.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="b97d53ce-f30c-456a-9de5-d0e6de02bee2"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="Modelado.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="ae66aa44-1610-438a-9b7c-1878919b080b"
+                LastKnownName="MessageOccurrenceSpecification15"
+                LastKnownLocation="Modelado.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="84cea259-d484-45f0-a729-0273a8625ea1"
+            name="ExecutionOccurrenceSpecification7">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="cd225a21-2ae5-4cff-aeba-fe59e5e1b001"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Modelado.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="3d16bfb7-44be-49f7-80ad-766addfec994"
+                LastKnownName="VentanaPPal"
+                LastKnownLocation="Modelado.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="e0e0e82f-e331-4b69-91f5-a307d62e718b"
+            name="BehaviorExecutionSpecification3">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="a870d4f1-f7e2-4cbf-8ba5-1d2b07103241"
+                LastKnownName="AdminActividades"
+                LastKnownLocation="Modelado.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="789a8761-8426-4aaf-9dba-ffa32e07f619"
+                LastKnownName="ExecutionOccurrenceSpecification6"
+                LastKnownLocation="Modelado.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="01c33aa4-2bdd-44a6-bb27-dea302e29ce4"
+                LastKnownName="ExecutionOccurrenceSpecification5"
+                LastKnownLocation="Modelado.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="48af5c3a-2071-41cb-ae39-a9ad3974b43a"
+                LastKnownName="MessageOccurrenceSpecification10"
+                LastKnownLocation="Modelado.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="bb76968b-b318-45a4-ab80-8c8d4b7b2ce8"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="Modelado.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="01c33aa4-2bdd-44a6-bb27-dea302e29ce4"
+            name="ExecutionOccurrenceSpecification5">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="93060209-2b11-4e9f-afe9-296b1f752db9"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Modelado.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="a870d4f1-f7e2-4cbf-8ba5-1d2b07103241"
+                LastKnownName="AdminActividades"
+                LastKnownLocation="Modelado.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="789a8761-8426-4aaf-9dba-ffa32e07f619"
+            name="ExecutionOccurrenceSpecification6">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="7780fb75-2aa0-47ed-8e83-652ea96e7797"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Modelado.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="a870d4f1-f7e2-4cbf-8ba5-1d2b07103241"
+                LastKnownName="AdminActividades"
+                LastKnownLocation="Modelado.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="36edf8cb-5d1c-4003-b551-029037451e97"
+            name="ExecutionOccurrenceSpecification8">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="5374b86d-12a7-45c2-8a12-563bc4cbb27b"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Modelado.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="3d16bfb7-44be-49f7-80ad-766addfec994"
+                LastKnownName="VentanaPPal"
+                LastKnownLocation="Modelado.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="e18c8e83-605a-4dfa-834e-af26d3093b75"
+            name="BehaviorExecutionSpecification5">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="3d16bfb7-44be-49f7-80ad-766addfec994"
+                LastKnownName="VentanaPPal"
+                LastKnownLocation="Modelado.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="6af73b45-14d7-49e5-8ef7-8b39726b29ba"
+                LastKnownName="ExecutionOccurrenceSpecification10"
+                LastKnownLocation="Modelado.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="95121885-f83c-4cc5-a78a-0386bd1ad06a"
+                LastKnownName="ExecutionOccurrenceSpecification9"
+                LastKnownLocation="Modelado.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="6f9b06da-cc9b-483a-9e7a-822306a7551b"
+                LastKnownName="MessageOccurrenceSpecification18"
+                LastKnownLocation="Modelado.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="9d2d78a4-d990-4f49-9e27-61da0e3c88f2"
+                LastKnownName="MessageOccurrenceSpecification21"
+                LastKnownLocation="Modelado.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="b3d3174b-c05d-4748-98cd-88a163e19980"
+                LastKnownName="MessageOccurrenceSpecification24"
+                LastKnownLocation="Modelado.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="3eb76c19-fdb2-4856-84dd-7f2271b1812c"
+                LastKnownName="MessageOccurrenceSpecification19"
+                LastKnownLocation="Modelado.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="95121885-f83c-4cc5-a78a-0386bd1ad06a"
+            name="ExecutionOccurrenceSpecification9">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="efc6a8bf-0b37-4bfe-8f9b-553260c1d845"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Modelado.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="3d16bfb7-44be-49f7-80ad-766addfec994"
+                LastKnownName="VentanaPPal"
+                LastKnownLocation="Modelado.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="080fa6ec-2647-47d1-8398-f87c609e4f5f"
+            name="BehaviorExecutionSpecification6">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="a870d4f1-f7e2-4cbf-8ba5-1d2b07103241"
+                LastKnownName="AdminActividades"
+                LastKnownLocation="Modelado.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="8b51f4b1-bb63-4bdc-899e-1805db8c7d9f"
+                LastKnownName="ExecutionOccurrenceSpecification12"
+                LastKnownLocation="Modelado.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="481bf924-9480-4c35-9405-596c31aa4de3"
+                LastKnownName="ExecutionOccurrenceSpecification11"
+                LastKnownLocation="Modelado.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="dcba7cea-ca68-4cd5-a62d-e3af6ea03d76"
+                LastKnownName="MessageOccurrenceSpecification22"
+                LastKnownLocation="Modelado.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="f4e32ee0-cd23-4fc8-a754-ecd9eb39cbee"
+                LastKnownName="MessageOccurrenceSpecification25"
+                LastKnownLocation="Modelado.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="82bbb36e-51f6-452f-8447-bb80ee2b1873"
+                LastKnownName="MessageOccurrenceSpecification28"
+                LastKnownLocation="Modelado.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="53caab63-fcdc-49aa-95b8-8e11a69c83ae"
+                LastKnownName="MessageOccurrenceSpecification23"
+                LastKnownLocation="Modelado.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="481bf924-9480-4c35-9405-596c31aa4de3"
+            name="ExecutionOccurrenceSpecification11">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="481f7880-e7e1-4feb-a1c6-3009c2aa0de6"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Modelado.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="a870d4f1-f7e2-4cbf-8ba5-1d2b07103241"
+                LastKnownName="AdminActividades"
+                LastKnownLocation="Modelado.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="9cf2115a-04ef-43a4-b615-778c261d5cf2"
+            name="BehaviorExecutionSpecification7">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="c7b7240a-524d-4781-84a6-c882f83b0589"
+                LastKnownName="Actividad"
+                LastKnownLocation="Modelado.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="380b2594-6ed2-477e-9d4c-4e49e82bb6c5"
+                LastKnownName="ExecutionOccurrenceSpecification14"
+                LastKnownLocation="Modelado.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="36911c59-2aa7-42be-b896-6a18e74cc5b1"
+                LastKnownName="ExecutionOccurrenceSpecification13"
+                LastKnownLocation="Modelado.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="d5fd766c-5abd-4d6e-bd79-949e7d07467c"
+                LastKnownName="MessageOccurrenceSpecification26"
+                LastKnownLocation="Modelado.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="ae7355dd-07cd-4590-916d-1ab6a5f15dd5"
+                LastKnownName="MessageOccurrenceSpecification27"
+                LastKnownLocation="Modelado.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="36911c59-2aa7-42be-b896-6a18e74cc5b1"
+            name="ExecutionOccurrenceSpecification13">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="b41603e3-8e6a-4704-9f8e-f8beb01fe285"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Modelado.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="c7b7240a-524d-4781-84a6-c882f83b0589"
+                LastKnownName="Actividad"
+                LastKnownLocation="Modelado.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="380b2594-6ed2-477e-9d4c-4e49e82bb6c5"
+            name="ExecutionOccurrenceSpecification14">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="5968c6a4-2350-44ea-9afc-d2d56b52dde8"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Modelado.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="c7b7240a-524d-4781-84a6-c882f83b0589"
+                LastKnownName="Actividad"
+                LastKnownLocation="Modelado.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="8b51f4b1-bb63-4bdc-899e-1805db8c7d9f"
+            name="ExecutionOccurrenceSpecification12">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="ab6e4190-289d-4a14-98f6-fc4b5ac46208"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Modelado.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="a870d4f1-f7e2-4cbf-8ba5-1d2b07103241"
+                LastKnownName="AdminActividades"
+                LastKnownLocation="Modelado.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="6af73b45-14d7-49e5-8ef7-8b39726b29ba"
+            name="ExecutionOccurrenceSpecification10">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="e125959f-5a77-450f-a4fe-bdea99c78fb9"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Modelado.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="3d16bfb7-44be-49f7-80ad-766addfec994"
+                LastKnownName="VentanaPPal"
+                LastKnownLocation="Modelado.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline
+            Id="9e8bf666-0ac9-49c8-9b6a-0f94e05ffa5b"
+            name="Usuario"
+            isActor="false"
+            lifelineDisplayName="Usuario">
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="3d0e0d14-4778-421f-b896-7d86519ea68e"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="Modelado.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="5bb65381-f4e2-4144-9d57-30bf7e7564c4"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="Modelado.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="36711eb0-2337-4c60-9e67-b9fef1d6c2d6"
+                LastKnownName="MessageOccurrenceSpecification13"
+                LastKnownLocation="Modelado.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="e84b2b25-f981-4437-9ce9-381201bc2b41"
+                LastKnownName="MessageOccurrenceSpecification16"
+                LastKnownLocation="Modelado.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="56c402d8-a023-4884-b165-82e3071bcd10"
+                LastKnownName="MessageOccurrenceSpecification17"
+                LastKnownLocation="Modelado.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="b9025b2f-47a1-46c1-8e21-cf469525eaf9"
+                LastKnownName="MessageOccurrenceSpecification20"
+                LastKnownLocation="Modelado.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="3d16bfb7-44be-49f7-80ad-766addfec994"
+            name="VentanaPPal"
+            isActor="false"
+            lifelineDisplayName="VentanaPPal">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="f072a14f-793b-4158-a3f2-b4c20ed1f81e"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="Modelado.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="1f69e8d2-c3e3-4641-be46-edb4921268c7"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="Modelado.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="84cea259-d484-45f0-a729-0273a8625ea1"
+                LastKnownName="ExecutionOccurrenceSpecification7"
+                LastKnownLocation="Modelado.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="36edf8cb-5d1c-4003-b551-029037451e97"
+                LastKnownName="ExecutionOccurrenceSpecification8"
+                LastKnownLocation="Modelado.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="95121885-f83c-4cc5-a78a-0386bd1ad06a"
+                LastKnownName="ExecutionOccurrenceSpecification9"
+                LastKnownLocation="Modelado.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="6af73b45-14d7-49e5-8ef7-8b39726b29ba"
+                LastKnownName="ExecutionOccurrenceSpecification10"
+                LastKnownLocation="Modelado.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="a870d4f1-f7e2-4cbf-8ba5-1d2b07103241"
+            name="AdminActividades"
+            isActor="false"
+            lifelineDisplayName="AdminActividades">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="01c33aa4-2bdd-44a6-bb27-dea302e29ce4"
+                LastKnownName="ExecutionOccurrenceSpecification5"
+                LastKnownLocation="Modelado.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="789a8761-8426-4aaf-9dba-ffa32e07f619"
+                LastKnownName="ExecutionOccurrenceSpecification6"
+                LastKnownLocation="Modelado.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="481bf924-9480-4c35-9405-596c31aa4de3"
+                LastKnownName="ExecutionOccurrenceSpecification11"
+                LastKnownLocation="Modelado.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="8b51f4b1-bb63-4bdc-899e-1805db8c7d9f"
+                LastKnownName="ExecutionOccurrenceSpecification12"
+                LastKnownLocation="Modelado.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="c7b7240a-524d-4781-84a6-c882f83b0589"
+            name="Actividad"
+            isActor="false"
+            lifelineDisplayName="Actividad">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="36911c59-2aa7-42be-b896-6a18e74cc5b1"
+                LastKnownName="ExecutionOccurrenceSpecification13"
+                LastKnownLocation="Modelado.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="380b2594-6ed2-477e-9d4c-4e49e82bb6c5"
+                LastKnownName="ExecutionOccurrenceSpecification14"
+                LastKnownLocation="Modelado.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message
+            Id="92fdde58-7109-4a0f-9d2c-ecd7c5088fcc"
+            name="Loggin"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="3d0e0d14-4778-421f-b896-7d86519ea68e"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="Modelado.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="81fc698c-b3d0-4eaf-a7ed-f3c01a1fef95"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="Modelado.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="e6d949d3-03db-45ba-9ac9-c327d0a2229d"
+            name="preferencias"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="10465fc8-ab91-4a20-868e-f377e0092175"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="Modelado.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="5bb65381-f4e2-4144-9d57-30bf7e7564c4"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="Modelado.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="bf4f2e06-f03e-4036-9237-62b2116a4095"
+            name="nivel y actividad seleccionados"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="36711eb0-2337-4c60-9e67-b9fef1d6c2d6"
+                LastKnownName="MessageOccurrenceSpecification13"
+                LastKnownLocation="Modelado.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="f7698fca-de82-4ef0-8319-72d03eefc931"
+                LastKnownName="MessageOccurrenceSpecification14"
+                LastKnownLocation="Modelado.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="7de6f738-f9b0-4084-b62a-db82fea38621"
+            name="inicio de la actividad"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="ae66aa44-1610-438a-9b7c-1878919b080b"
+                LastKnownName="MessageOccurrenceSpecification15"
+                LastKnownLocation="Modelado.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="e84b2b25-f981-4437-9ce9-381201bc2b41"
+                LastKnownName="MessageOccurrenceSpecification16"
+                LastKnownLocation="Modelado.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="1488f3c6-32f2-49b5-9253-9d9ccb4dc484"
+            name="nivel de la actividad"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="51c995d8-f841-4c16-ae5c-a868cc8b9eba"
+                LastKnownName="MessageOccurrenceSpecification9"
+                LastKnownLocation="Modelado.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="48af5c3a-2071-41cb-ae39-a9ad3974b43a"
+                LastKnownName="MessageOccurrenceSpecification10"
+                LastKnownLocation="Modelado.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="3bfa2958-9e58-44dd-ba65-9801abcda073"
+            name="última actividad de ese nivel"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="bb76968b-b318-45a4-ab80-8c8d4b7b2ce8"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="Modelado.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="b97d53ce-f30c-456a-9de5-d0e6de02bee2"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="Modelado.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="46bcba0b-c336-4402-8844-e8edb01fde7b"
+            name="presiona letra"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="56c402d8-a023-4884-b165-82e3071bcd10"
+                LastKnownName="MessageOccurrenceSpecification17"
+                LastKnownLocation="Modelado.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="6f9b06da-cc9b-483a-9e7a-822306a7551b"
+                LastKnownName="MessageOccurrenceSpecification18"
+                LastKnownLocation="Modelado.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="6cfc9f13-0960-4292-a09a-23bd15e5eb6f"
+            name="Letra correcta o no, hay actividad o no"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="3eb76c19-fdb2-4856-84dd-7f2271b1812c"
+                LastKnownName="MessageOccurrenceSpecification19"
+                LastKnownLocation="Modelado.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="b9025b2f-47a1-46c1-8e21-cf469525eaf9"
+                LastKnownName="MessageOccurrenceSpecification20"
+                LastKnownLocation="Modelado.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="5d84329e-229a-4c40-9339-3d0ffd7166fc"
+            name="IngresarLetraUsuario()"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="9d2d78a4-d990-4f49-9e27-61da0e3c88f2"
+                LastKnownName="MessageOccurrenceSpecification21"
+                LastKnownLocation="Modelado.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="dcba7cea-ca68-4cd5-a62d-e3af6ea03d76"
+                LastKnownName="MessageOccurrenceSpecification22"
+                LastKnownLocation="Modelado.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="949bdf77-dcb6-49d7-ab2b-0cc4e59ff876"
+            name="resultActividad"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="53caab63-fcdc-49aa-95b8-8e11a69c83ae"
+                LastKnownName="MessageOccurrenceSpecification23"
+                LastKnownLocation="Modelado.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="b3d3174b-c05d-4748-98cd-88a163e19980"
+                LastKnownName="MessageOccurrenceSpecification24"
+                LastKnownLocation="Modelado.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="1767c4e4-0a03-4b12-b2e5-534b27b1ed61"
+            name="IngresarLetraUsuario"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="f4e32ee0-cd23-4fc8-a754-ecd9eb39cbee"
+                LastKnownName="MessageOccurrenceSpecification25"
+                LastKnownLocation="Modelado.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="d5fd766c-5abd-4d6e-bd79-949e7d07467c"
+                LastKnownName="MessageOccurrenceSpecification26"
+                LastKnownLocation="Modelado.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="7589cbed-58a8-4617-875c-c9154861f4fa"
+            name="resultActividad"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="ae7355dd-07cd-4590-916d-1ab6a5f15dd5"
+                LastKnownName="MessageOccurrenceSpecification27"
+                LastKnownLocation="Modelado.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="82bbb36e-51f6-452f-8447-bb80ee2b1873"
+                LastKnownName="MessageOccurrenceSpecification28"
+                LastKnownLocation="Modelado.uml" />
+            </receiveEvent>
+          </message>
+        </messages>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="249b39c3-0c62-4219-8c78-72cf44fb8740"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="c705298a-e6ad-4b8c-ac7a-0683178ac273"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="cd225a21-2ae5-4cff-aeba-fe59e5e1b001"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="5374b86d-12a7-45c2-8a12-563bc4cbb27b"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="93060209-2b11-4e9f-afe9-296b1f752db9"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="7780fb75-2aa0-47ed-8e83-652ea96e7797"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="efc6a8bf-0b37-4bfe-8f9b-553260c1d845"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="e125959f-5a77-450f-a4fe-bdea99c78fb9"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="481f7880-e7e1-4feb-a1c6-3009c2aa0de6"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="ab6e4190-289d-4a14-98f6-fc4b5ac46208"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="b41603e3-8e6a-4704-9f8e-f8beb01fe285"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="5968c6a4-2350-44ea-9afc-d2d56b52dde8"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="d32811f7-ce3a-42f2-85d0-c5fe64e09dbf"
+        name="Activity1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="fd1a68e9-7429-481a-a4ae-0f02ce01f907"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="74d9d292-4f20-46b4-84ff-53e360d2ca38"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="84c27851-7b6b-4a63-b53f-b0cd1c778747"
+                  LastKnownName="Loggin Usuario"
+                  LastKnownLocation="Modelado.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="84c27851-7b6b-4a63-b53f-b0cd1c778747"
+            name="Loggin Usuario"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="b96d5c70-7051-4722-8a50-c6d2c553a466"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="4e02e90e-68fa-466d-bb34-5a2c0768ea03"
+                  LastKnownName="Cargar preferencias usuario"
+                  LastKnownLocation="Modelado.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="4e02e90e-68fa-466d-bb34-5a2c0768ea03"
+            name="Cargar preferencias usuario"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="e4da824e-7c69-4618-ba0f-2ddee45d1046"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="5751685d-aa6f-4f43-a019-0dddfef9c6de"
+                  LastKnownName="Seleccionar Continuar Curso o Elegir Actividad"
+                  LastKnownLocation="Modelado.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="9b4b8606-8f97-4f7e-9656-ca1ca46e89b5"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="5ab96fdb-e45e-45c2-a230-8e08c865567f"
+                guard="elegir"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="0847bd2e-d6ec-4a16-ac77-ee6cec6a63b1"
+                  LastKnownName="Mostrar todos los niveles (principiante, intermedio, experto)"
+                  LastKnownLocation="Modelado.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="4d97cf45-e3d6-4120-9051-dc287757055f"
+                guard="curso"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="d75104e7-1cea-41f5-90c5-97a83ffa6c03"
+                  LastKnownName="Cargar siguiente act desde preferencias"
+                  LastKnownLocation="Modelado.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="5751685d-aa6f-4f43-a019-0dddfef9c6de"
+            name="Seleccionar Continuar Curso o Elegir Actividad"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="258b830b-7d2b-49e9-8ca5-3910d1e88c4a"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="9b4b8606-8f97-4f7e-9656-ca1ca46e89b5"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="Modelado.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="d75104e7-1cea-41f5-90c5-97a83ffa6c03"
+            name="Cargar siguiente act desde preferencias"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="bf23ba7b-df80-4988-9c35-9f43799c252d"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="b9a321dc-1f97-43fa-8b78-b5201e12f9f9"
+                  LastKnownName="Por tiempo o libre"
+                  LastKnownLocation="Modelado.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="0847bd2e-d6ec-4a16-ac77-ee6cec6a63b1"
+            name="Mostrar todos los niveles (principiante, intermedio, experto)"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="0ae9cfa8-6aac-4ce2-b910-08347d291750"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="0d83e205-4dd7-41e3-9db3-92f8b673008d"
+                  LastKnownName="mostrar todas las actividades"
+                  LastKnownLocation="Modelado.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="0d83e205-4dd7-41e3-9db3-92f8b673008d"
+            name="mostrar todas las actividades"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="9206f992-d68d-4770-902a-8379ce983289"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="b9a321dc-1f97-43fa-8b78-b5201e12f9f9"
+                  LastKnownName="Por tiempo o libre"
+                  LastKnownLocation="Modelado.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="b9a321dc-1f97-43fa-8b78-b5201e12f9f9"
+            name="Por tiempo o libre"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="9cf6e1e8-6068-424d-a503-f06f83b094fb"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="996e1d64-2891-4ae8-979f-1a202cc4d1ac"
+                  LastKnownName="Decision11"
+                  LastKnownLocation="Modelado.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="996e1d64-2891-4ae8-979f-1a202cc4d1ac"
+            name="Decision11"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="831244b6-7d37-4d80-b098-55121acaa706"
+                guard="por tiempo"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="d0261e10-7e1c-4e46-9e8f-10577c9dacbe"
+                  LastKnownName="Iniciar reloj"
+                  LastKnownLocation="Modelado.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="366b6076-1d0d-4e52-b033-a67749f5bb0c"
+                guard="libre"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="1f53774f-dfb9-42dc-9cb8-1c3d0eae3340"
+                  LastKnownName="Iniciar actividad"
+                  LastKnownLocation="Modelado.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="d0261e10-7e1c-4e46-9e8f-10577c9dacbe"
+            name="Iniciar reloj"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="bc2ab427-d8f2-49b5-bdb0-d71024c1cfa8"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="1f53774f-dfb9-42dc-9cb8-1c3d0eae3340"
+                  LastKnownName="Iniciar actividad"
+                  LastKnownLocation="Modelado.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="1f53774f-dfb9-42dc-9cb8-1c3d0eae3340"
+            name="Iniciar actividad"
+            isLeaf="false" />
+          <opaqueAction
+            Id="18c95644-0d82-42cd-8172-2b3801277e7a"
+            name="Una actividad del índice de actividades (id actividad)"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="e6519ac8-c53b-4e76-89ec-e13a15a7ce9a"
+                guard="tiene varias"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="eda8ccea-5627-4ea6-945c-2d73fa162e4f"
+                  LastKnownName="Lecciones en el xml de la lección (id lección)"
+                  LastKnownLocation="Modelado.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="eda8ccea-5627-4ea6-945c-2d73fa162e4f"
+            name="Lecciones en el xml de la lección (id lección)"
+            isLeaf="false" />
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

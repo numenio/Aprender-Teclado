@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 12.125, 9.375" name="Actividades">
+  <activityRootModelMoniker Id="4798b2ea-40bc-4b21-9b7d-a71debc5b696" />
+  <nestedChildShapes>
+    <initialNodeShape Id="51f4979a-3729-4128-ab5a-65cdda2bfbd1" absoluteBounds="4.75, 0.625, 0.125, 0.125" customColor="89, 89, 89">
+      <initialNodeMoniker Id="b86c6c6a-40b4-4533-863d-2a017446679e" LastKnownName="Initial1" />
+    </initialNodeShape>
+    <actionShape Id="6b9a05d0-4cfa-414f-b50f-68f7fd32b4ae" absoluteBounds="4.375, 1.25, 1.125, 0.375" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="a2abd0f8-ab61-46f8-8ce5-20ec895284cf" LastKnownName="Cargar idioma interfaz" />
+    </actionShape>
+    <controlFlowConnector edgePoints="[(4.8125 : 0.75); (4.8125 : 1.25)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
+      <controlFlowMoniker Id="05911ef0-4f73-43e6-ab1b-ce36d5117855" />
+      <relativeChildShapes />
+      <nodes>
+        <initialNodeShapeMoniker Id="51f4979a-3729-4128-ab5a-65cdda2bfbd1" />
+        <actionShapeMoniker Id="6b9a05d0-4cfa-414f-b50f-68f7fd32b4ae" />
+      </nodes>
+    </controlFlowConnector>
+    <actionShape Id="7c4bb724-8a31-40a5-83bf-c1f7c5ebcf4a" absoluteBounds="6.25, 1.125, 1.75, 1.375" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="2b718021-8e5d-42ef-9699-a6dd7952d04a" LastKnownName="Preferencias:&#xD;&#xA;Elegir nivel básico, intermedio, experto&#xD;&#xA;Tamaño de letra y color&#xD;&#xA;sintetizador y velocidad&#xD;&#xA;última lección actividad&#xD;&#xA;por tiempo o libre&#xD;&#xA;cantidad de segundos en act por tiempo" />
+    </actionShape>
+    <actionShape Id="ab67e0af-7a36-4e80-9208-aa1cf274dc6b" absoluteBounds="4.375, 3.125, 1.125, 0.375" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="1b71feb4-ed17-4af0-a2ec-4694d6356241" LastKnownName="Elegir por tiempo o libre" />
+    </actionShape>
+    <actionShape Id="603a71bf-bc38-4aa3-8c12-f2f29a19691c" absoluteBounds="4.375, 2.375, 1.125, 0.625" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="d0420503-afa7-43ff-a679-bbffc57ba526" LastKnownName="Cargar desde preferencias básico, intermedio, experto" />
+    </actionShape>
+    <actionShape Id="b8398d16-a1e8-42e9-92ea-4a092baca92d" absoluteBounds="6.375, 3, 1.125, 0.375" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="e84f7106-4e85-4334-b4ff-86e93546d7e7" LastKnownName="Ver premios" />
+    </actionShape>
+    <actionShape Id="64d89c81-a4e7-4fc9-bff7-11ac21533ce4" absoluteBounds="3.375, 4.375, 3.25, 1" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="3fb2f2cc-d93a-4a77-a4c9-ae98a861b1e3" LastKnownName="Cargar índice de lecciones C:\Users\Win-G\Documents\Expression\Blend 4\Projects\Aprender-Teclado\Recursos\Lecciones\Español.xml&#xD;&#xA;&lt;!-- &lt;item&gt;[ID]&#xD;&#xA;&lt;!-- &lt;item&gt;[Tipo] Principiante, experto, intermedio&#xD;&#xA;&lt;!-- &lt;item&gt;[Path]&#xD;&#xA;&lt;!-- &lt;item&gt;[Autor]" />
+    </actionShape>
+    <actionShape Id="74dd4a0f-2971-4b40-8e73-edddff3b9740" absoluteBounds="4.375, 3.625, 1.125, 0.625" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="80f59c69-19ca-444e-93b9-e53c42158f18" LastKnownName="Ver en preferencias hasta qué lección se llegó" />
+    </actionShape>
+    <actionShape Id="777e4c91-d2a2-4526-9170-6ddb617db1ad" absoluteBounds="3.5, 5.5, 3, 1.75" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="658674b5-679b-44bf-8746-f2af0b403d8c" LastKnownName="Cargar lección desde Path de arriba:&#xD;&#xA;&lt;!-- &lt;item&gt;[ID]&#xD;&#xA;&lt;!-- &lt;item&gt;[Nombre]&#xD;&#xA;&lt;!-- &lt;item&gt;[Sección]:&#xD;&#xA;     Letras&#xD;&#xA;     Palabras&#xD;&#xA;     Teclas Shift&#xD;&#xA;     Números&#xD;&#xA;     Números y Símbolos&#xD;&#xA;     Sílabas&#xD;&#xA;     &#xD;&#xA;&lt;!-- &lt;item&gt;[Texto]" />
+    </actionShape>
+    <actionShape Id="b6c6e11f-ded4-4ecd-be32-7c79f3eb9799" absoluteBounds="8, 3.5, 1.625, 1.125" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="f9630956-8612-40a0-b823-1469f208433b" LastKnownName="Vista de lecciones:&#xD;&#xA;Seleccionar Curso&#xD;&#xA;Seleccionar Lección" />
+    </actionShape>
+    <actionShape Id="601f07d6-59a7-460e-9f2c-2921b774aafd" absoluteBounds="10.25, 1.125, 1.625, 2.125" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="b80f107c-d583-4297-ace3-d71c5f21460f" LastKnownName="Estadísticas:&#xD;&#xA;idUsuario&#xD;&#xA;idActividad&#xD;&#xA;idLección&#xD;&#xA;fecha&#xD;&#xA;hora&#xD;&#xA;caracteresMinuto&#xD;&#xA;aciertos&#xD;&#xA;% aciertos&#xD;&#xA;errores&#xD;&#xA;% errores&#xD;&#xA;duración" />
+    </actionShape>
+    <actionShape Id="4fef97ab-6496-4a1e-93bc-087fb0492317" absoluteBounds="7, 5, 1.875, 1.125" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="b513965f-d481-4f48-bbd7-2abf832fb7eb" LastKnownName="Editor de lecciones:&#xD;&#xA;Texto&#xD;&#xA;Nombre&#xD;&#xA;Sección" />
+    </actionShape>
+    <actionShape Id="2a1a89b4-f407-4a2e-95f7-d0e7a60c6d2d" absoluteBounds="4.375, 1.875, 1.125, 0.375" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="9eff9997-b3a4-4438-827a-5284bf03ef17" LastKnownName="Loggin usuario" />
+    </actionShape>
+    <actionShape Id="f9b7f0aa-735c-454d-9bfd-bc9069918a5c" absoluteBounds="3.625, 7.375, 2.625, 0.875" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="9f3065e7-80ef-4a52-bb38-e7fcf2e49e8b" LastKnownName="Comenzar la lección, pausarla, recomenzar, detenerla" />
+    </actionShape>
+    <actionShape Id="1f66c93f-af03-4576-9c22-890c7eba4fd1" absoluteBounds="4, 8.5, 1.875, 0.625" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="e760e1a7-9af9-4989-ab50-5564e5b798f1" LastKnownName="ver cantidad de estrellas y estadísticas" />
+    </actionShape>
+  </nestedChildShapes>
+</activityDiagram>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preferencias>
+  <nombreUsuario>sin nombre</nombreUsuario>
+  <nivel>experto</nivel>
+  <tamañoLetra>40</tamañoLetra>
+  <nombreLetra>Arial</nombreLetra>
+  <colorLetra>Yellow</colorLetra>
+  <colorFondo>Black</colorFondo>
+  <nombreSintetizador>Cármen</nombreSintetizador>
+  <velocidadSintetizador>10</velocidadSintetizador>
+  <últimaActividad>3</últimaActividad>
+  <últimaLección>2</últimaLección>
+  <swPorTiempo>true</swPorTiempo>
+  <cantSegundos>23</cantSegundos>
+  <swMostrarLetrasEnMayúsculas>true</swMostrarLetrasEnMayúsculas>
+</preferencias>

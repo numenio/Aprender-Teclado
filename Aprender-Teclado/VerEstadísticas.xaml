@@ -1,0 +1,130 @@
+﻿<Window
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:local="clr-namespace:Aprender_Teclado" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d"
+	x:Class="Aprender_Teclado.VerEstadísticas"
+	x:Name="Window"
+	Title="Centro de Estadísticas"
+	Width="841" Height="483" Background="Black" KeyUp="Window_KeyUp" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="input_keyboard.ico">
+	<Window.Resources>
+		<SolidColorBrush x:Key="ListBorder" Color="#828790"/>
+		<Style x:Key="ListBoxStyle1" TargetType="{x:Type ListBox}">
+			<Setter Property="Background" Value="{DynamicResource {x:Static SystemColors.WindowBrushKey}}"/>
+			<Setter Property="BorderBrush" Value="{StaticResource ListBorder}"/>
+			<Setter Property="BorderThickness" Value="1"/>
+			<Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+			<Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Auto"/>
+			<Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Auto"/>
+			<Setter Property="ScrollViewer.CanContentScroll" Value="true"/>
+			<Setter Property="VerticalContentAlignment" Value="Center"/>
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="{x:Type ListBox}">
+						<Border x:Name="Bd" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" Padding="1" SnapsToDevicePixels="true" BorderBrush="#FF3155E7">
+							<ScrollViewer Focusable="false" Padding="{TemplateBinding Padding}">
+								<ItemsPresenter SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" OpacityMask="{x:Null}"/>
+							</ScrollViewer>
+						</Border>
+						<ControlTemplate.Triggers>
+							<Trigger Property="IsEnabled" Value="false">
+								<Setter Property="Background" TargetName="Bd" Value="{DynamicResource {x:Static SystemColors.ControlBrushKey}}"/>
+							</Trigger>
+							<Trigger Property="IsGrouping" Value="true">
+								<Setter Property="ScrollViewer.CanContentScroll" Value="false"/>
+							</Trigger>
+						</ControlTemplate.Triggers>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+	</Window.Resources>
+
+	<Grid x:Name="LayoutRoot">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="0.137*"/>
+			<ColumnDefinition Width="0.264*"/>
+			<ColumnDefinition Width="0.143*"/>
+			<ColumnDefinition Width="0.141*"/>
+			<ColumnDefinition Width="0.315*"/>
+		</Grid.ColumnDefinitions>
+		<StackPanel Margin="2.225,18,3.15,11" Grid.Column="1">
+			<TextBlock Height="28" Margin="9,0,8,0" TextWrapping="Wrap" Foreground="#FFDBF300" FontSize="13.333" FontFamily="Lithos Pro Regular"><Run Language="es-es" Text="Actividades:    "/></TextBlock>
+            <ListBox x:Name="listActividades" Height="374" Margin="9,0,8,0" ItemsSource="{Binding}" MouseLeftButtonUp="listActividades_MouseLeftButtonUp" KeyUp="listActividades_KeyUp" />
+		</StackPanel>
+		<StackPanel Grid.Column="2" Margin="0.85,7,2.4,11">
+            <TextBlock Height="40" Margin="8,0,9.16,0" TextWrapping="Wrap" Foreground="#FFDBF300" FontSize="13.333" FontFamily="Lithos Pro Regular"><Run Language="es-es" Text="Lecciones de la actividad: "/></TextBlock>
+            <ListBox x:Name="listLecciones" Height="373" Margin="8,0,9.16,0" ItemsSource="{Binding}" MouseLeftButtonUp="listLecciones_MouseLeftButtonUp" KeyUp="listLecciones_KeyUp" />
+		</StackPanel>
+		<StackPanel Grid.Column="4" Margin="13.555,44.929,6,9" >
+			<TextBlock x:Name="txtFecha" Height="28" TextWrapping="Wrap" Margin="0,0,8,0" Foreground="#FFDBF300"><Run Language="es-es" Text="Fecha:"/></TextBlock>
+			<TextBlock x:Name="txtDuración" Height="28" TextWrapping="Wrap" Margin="0,0,8,0" Foreground="#FFDBF300"><Run Language="es-es" Text="Duración de la lección:"/></TextBlock>
+			<TextBlock x:Name="txtAciertos" Height="28" TextWrapping="Wrap" Margin="0,0,8,0" Foreground="#FFDBF300"><Run Language="es-es" Text="Aciertos:"/></TextBlock>
+			<TextBlock x:Name="txtErrores" Height="28" TextWrapping="Wrap" Margin="0,0,8,0" Foreground="#FFDBF300"><Run Language="es-es" Text="Errores:"/></TextBlock>
+			<TextBlock x:Name="txtCaracteresMinuto" Height="28" TextWrapping="Wrap" Margin="0,0,8,0" Foreground="#FFDBF300"><Run Language="es-es" Text="Caracteres por minuto:"/></TextBlock>
+			<TextBlock x:Name="txtMásErrores" Height="28" TextWrapping="Wrap" Margin="0,0,8,0" Foreground="#FFDBF300"><Run Language="es-es" Text="Carácter con más errores:"/></TextBlock>
+			<TextBlock x:Name="txtSegundoErrores" Height="28" TextWrapping="Wrap" Margin="0,0,8,0" Foreground="#FFDBF300"><Run Language="es-es" Text="Segundo carácter con más errores:"/></TextBlock>
+			<TextBlock x:Name="txtTerceroErrores" Height="28" TextWrapping="Wrap" Margin="0,0,8,0" Foreground="#FFDBF300"><Run Language="es-es" Text="Tercer carácter con más errores:"/></TextBlock>
+			<TextBlock Height="28" TextWrapping="Wrap" Margin="0,0,8,0" Foreground="#FFDBF300" TextDecorations="Underline" FontFamily="Lithos Pro Regular"><Run Language="es-es" Text="Desempeño:"/></TextBlock>
+			<Canvas Height="120" Margin="0,0,8,0">
+				<local:medidor x:Name="medidor1" Canvas.Left="46.32" d:LayoutOverrides="Width, Height"/>
+			</Canvas>
+		</StackPanel>
+		<StackPanel Grid.Column="3" Margin="2.6,7,1.445,11">
+			<TextBlock Height="39" Margin="4,0" TextWrapping="Wrap" Foreground="#FFDBF300" FontSize="13.333" FontFamily="Lithos Pro Regular"><Run Language="es-es" Text="Realizaciones de la lección:"/></TextBlock>
+            <ListBox x:Name="listRealiaciones" Height="376" Margin="5,0,11,0" ItemsSource="{Binding}" MouseLeftButtonUp="listRealiaciones_MouseLeftButtonUp" KeyUp="listRealiaciones_KeyUp" />
+		</StackPanel>
+		<TextBlock Height="26.513" TextWrapping="Wrap" Margin="13.555,8,22,0" VerticalAlignment="Top" Grid.Column="4" Foreground="#FFDBF300" FontFamily="Hobo Std" FontSize="24"><Run Language="es-es" Text="Estadísticas:"/></TextBlock>
+		<StackPanel Margin="2.97,18,4,11">
+			<TextBlock Height="29" Margin="9,0,19.16,0" TextWrapping="Wrap" Foreground="#FFDBF300" FontSize="13.333" FontFamily="Lithos Pro Regular"><Run Language="es-es" Text="Usuarios:"/></TextBlock>
+			<ListBox x:Name="listUsuarios" Height="372" Margin="8,0" ItemsSource="{Binding}" Style="{DynamicResource ListBoxStyle1}" MouseLeftButtonUp="listUsuarios_MouseLeftButtonUp" KeyUp="listUsuarios_KeyUp" />
+		</StackPanel>
+		<Grid x:Name="gridMsjUsuario" Height="83.487" Margin="-14.945,58,65.77,0" VerticalAlignment="Top" Grid.Column="1" d:IsHidden="True">
+			<Rectangle Stroke="Black" RadiusY="21.42" RadiusX="21.42" Margin="20,2,5,11">
+				<Rectangle.Fill>
+					<LinearGradientBrush EndPoint="0.841,1.028" StartPoint="0.425,0.131">
+						<GradientStop Color="#FFF1FF02" Offset="0"/>
+						<GradientStop Color="#FF60E0E9" Offset="1"/>
+					</LinearGradientBrush>
+				</Rectangle.Fill>
+			</Rectangle>
+			<Path Data="M18.000452,7.564957 C12.000452,27.564957 12.208396,31.831798 12.208396,31.831798 L-14.821202,0.7702105" Fill="#FFF9F006" HorizontalAlignment="Left" Margin="-4.08,6,0,0" Stretch="Fill" Width="34" Height="32" VerticalAlignment="Top"/>
+			<TextBlock Margin="27.945,13,7,18" TextWrapping="Wrap" FontWeight="Bold"><Run Language="es-es" Text="Primero elija el usuario del que quiera ver las estadísticas"/></TextBlock>
+		</Grid>
+		<Grid x:Name="gridMsjActividad" Height="83.487" Margin="-13.745,56,-35.255,0" VerticalAlignment="Top" Grid.Column="2" d:IsHidden="True">
+			<Rectangle Stroke="Black" RadiusY="21.42" RadiusX="21.42" Margin="20,2,5,11">
+				<Rectangle.Fill>
+					<LinearGradientBrush EndPoint="0.885,0.961" StartPoint="0.644,0.084">
+						<GradientStop Color="#FFF1FF02" Offset="0"/>
+						<GradientStop Color="#FF11BE0B" Offset="1"/>
+					</LinearGradientBrush>
+				</Rectangle.Fill>
+			</Rectangle>
+			<Path Data="M19.931138,8.5356306 C13.931138,28.535631 16.069767,31.831797 16.069767,31.831797 L-17.71723,0.77020428" Fill="#FFF9F006" HorizontalAlignment="Left" Margin="-7.08,6,0,0" Stretch="Fill" Width="39" Height="32" VerticalAlignment="Top"/>
+			<TextBlock Margin="27.945,13,7,18" TextWrapping="Wrap" FontWeight="Bold"><Run Language="es-es" Text="Ahora elija la actividad de la que quiera ver las estadísticas"/></TextBlock>
+		</Grid>
+		<Grid x:Name="gridMsjLección" Height="83.487" Margin="58.055,53,-7.23,0" VerticalAlignment="Top" Grid.Column="1" d:IsHidden="True">
+			<Rectangle Stroke="Black" RadiusY="21.42" RadiusX="21.42" Margin="3,2,22,11">
+				<Rectangle.Fill>
+					<LinearGradientBrush EndPoint="0.471,1.071" StartPoint="0.694,0.15">
+						<GradientStop Color="#FFF1FF02" Offset="0"/>
+						<GradientStop Color="#FFC22961" Offset="1"/>
+					</LinearGradientBrush>
+				</Rectangle.Fill>
+			</Rectangle>
+			<Path Data="M120.3276,9.5063022 C114.3276,29.506302 123.79003,28.516844 123.79003,28.516844 L158.93999,1.74085" Fill="#FFF9F006" Margin="0,7,-8.945,0" Stretch="Fill" HorizontalAlignment="Right" Width="42.065" Height="27.593" VerticalAlignment="Top"/>
+			<TextBlock Margin="10.842,11.513,24.103,19.487" TextWrapping="Wrap" FontWeight="Bold"><Run Language="es-es" Text="En tercer lugar, elija la lección de la actividad que recién seleccionó"/></TextBlock>
+		</Grid>
+		<Grid x:Name="gridMsjIntentos" Height="101.487" Margin="-22.045,18,114.945,0" VerticalAlignment="Top" Grid.Column="4">
+			<Rectangle Stroke="Black" RadiusY="21.42" RadiusX="21.42" Margin="22,2,3,0">
+				<Rectangle.Fill>
+					<LinearGradientBrush EndPoint="0.702,0.963" StartPoint="0.467,0.09">
+						<GradientStop Color="#FFF9F006" Offset="0.249"/>
+						<GradientStop Color="#FFF51600" Offset="1"/>
+					</LinearGradientBrush>
+				</Rectangle.Fill>
+			</Rectangle>
+			<Path Data="M18.968899,22.125059 C12.968899,42.125059 17.038306,47.362576 17.038306,47.362576 L-22.538871,31.831796" Fill="#FFF9F006" Margin="-12.08,28,0,47.487" Stretch="Fill" HorizontalAlignment="Left" Width="43"/>
+			<TextBlock Margin="30.842,11.513,4.103,8" TextWrapping="Wrap" FontWeight="Bold"><Run Language="es-es" Text="Como una lección se puede hacer varias veces, elija de cuál vez quiere conocer las estadísticas"/></TextBlock>
+		</Grid>
+	</Grid>
+</Window>

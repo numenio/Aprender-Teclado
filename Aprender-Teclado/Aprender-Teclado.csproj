@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ExpressionBlendVersion>4.0.20621.0</ExpressionBlendVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FACA1BF0-8A4C-46B5-9270-2D6665019897}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <DefaultClrNameSpace>Aprender_Teclado</DefaultClrNameSpace>
+    <RootNamespace>Aprender_Teclado</RootNamespace>
+    <AssemblyName>Aprender-Teclado</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <ApplicationIcon>input_keyboard.ico</ApplicationIcon>
+    <Utf8Output>true</Utf8Output>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <UpdateUrl>http://localhost/Aprender-Teclado/</UpdateUrl>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>7A82E89F1B24A31F6138D288DF051FC4FC211404</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Aprender-Teclado_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Aprender_Teclado.App</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationFramework.Aero" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Actividades.xaml.cs">
+      <DependentUpon>Actividades.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="administrarActividades.xaml.cs">
+      <DependentUpon>administrarActividades.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="administrarUsuarios.xaml.cs">
+      <DependentUpon>administrarUsuarios.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="elementoDeLista.xaml.cs">
+      <DependentUpon>elementoDeLista.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="medidor.xaml.cs">
+      <DependentUpon>medidor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="tecla espacio.xaml.cs">
+      <DependentUpon>tecla espacio.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="editorDeActividades.xaml.cs">
+      <DependentUpon>editorDeActividades.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="etiquetaLink.xaml.cs">
+      <DependentUpon>etiquetaLink.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Lecciones.xaml.cs">
+      <DependentUpon>Lecciones.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PreferenciasUsuario.xaml.cs">
+      <DependentUpon>PreferenciasUsuario.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="tecla.xaml.cs">
+      <DependentUpon>tecla.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="teclado.xaml.cs">
+      <DependentUpon>teclado.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VerEstadísticas.xaml.cs">
+      <DependentUpon>VerEstadísticas.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Actividades.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="administrarActividades.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="administrarUsuarios.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="elementoDeLista.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="medidor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="tecla espacio.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="editorDeActividades.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="etiquetaLink.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Lecciones.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PreferenciasUsuario.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="NuevoUsuario.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="VentanaPPal.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NuevoUsuario.xaml.cs">
+      <DependentUpon>NuevoUsuario.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VentanaPPal.xaml.cs">
+      <DependentUpon>VentanaPPal.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="tecla.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="teclado.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="VerEstadísticas.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <AppDesigner Include="Properties\" />
+    <None Include="app.config" />
+    <None Include="Application.ico">
+      <Visible>false</Visible>
+    </None>
+    <None Include="Aprender-Teclado_TemporaryKey.pfx" />
+    <SplashScreen Include="inicio.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </SplashScreen>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Modelado-Situación\Lógica-Aplicación.csproj">
+      <Project>{C84FE452-060C-4515-89D8-647F09078C5F}</Project>
+      <Name>Lógica-Aplicación</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Voz\Voz.csproj">
+      <Project>{DD8A7C23-830C-4F73-8F97-4327AA0F5CCD}</Project>
+      <Name>Voz</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="actividades.gif" />
+    <Resource Include="actividades.png" />
+    <Resource Include="Address-Book.gif" />
+    <Resource Include="Address-Book.jpg" />
+    <Resource Include="Advanced-Options.jpg" />
+    <Resource Include="estadísticas.png" />
+    <Resource Include="keyboard.ico" />
+    <Resource Include="medidor.gif" />
+    <Resource Include="medidor.jpg" />
+    <Resource Include="preferencia.png" />
+    <Resource Include="preferencias.gif" />
+    <Resource Include="Properties.jpg" />
+    <Resource Include="tilde.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="input_keyboard.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="FlashAccessibility">
+      <Guid>{57A0E746-3863-4D20-A811-950C84F1DB9B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath32)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	     Other similar extension points exist, see Microsoft.Common.targets.
+	<Target Name="BeforeBuild">
+	</Target>
+	<Target Name="AfterBuild">
+	</Target>
+	-->
+</Project>

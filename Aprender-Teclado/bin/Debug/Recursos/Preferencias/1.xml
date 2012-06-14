@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preferencias>
+  <nombreUsuario>Guillermo Toscani</nombreUsuario>
+  <tamañoLetra>134</tamañoLetra>
+  <nombreLetra>Arial</nombreLetra>
+  <nombreSintetizador>ScanSoft Isabel_Dri40_16kHz</nombreSintetizador>
+  <velocidadSintetizador>10</velocidadSintetizador>
+  <colorLetra>Amarillo</colorLetra>
+  <colorFondo>Negro</colorFondo>
+  <swPorTiempo>false</swPorTiempo>
+  <cantSegundos>10</cantSegundos>
+  <swMostrarLetrasEnMayúsculas>true</swMostrarLetrasEnMayúsculas>
+</preferencias>

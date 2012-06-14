@@ -1,0 +1,5 @@
+C:\Users\Win-G\Documents\Expression\Blend 4\Projects\Aprender-Teclado\Voz\bin\Debug\Voz.dll
+C:\Users\Win-G\Documents\Expression\Blend 4\Projects\Aprender-Teclado\Voz\bin\Debug\Voz.pdb
+C:\Users\Win-G\Documents\Expression\Blend 4\Projects\Aprender-Teclado\Voz\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Win-G\Documents\Expression\Blend 4\Projects\Aprender-Teclado\Voz\obj\Debug\Voz.dll
+C:\Users\Win-G\Documents\Expression\Blend 4\Projects\Aprender-Teclado\Voz\obj\Debug\Voz.pdb

@@ -1,0 +1,5 @@
+C:\Users\Win-G\Documents\Expression\Blend 4\Projects\Aprender-Teclado\LectorXML\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Win-G\Documents\Expression\Blend 4\Projects\Aprender-Teclado\LectorXML\bin\Debug\Datos.dll
+C:\Users\Win-G\Documents\Expression\Blend 4\Projects\Aprender-Teclado\LectorXML\bin\Debug\Datos.pdb
+C:\Users\Win-G\Documents\Expression\Blend 4\Projects\Aprender-Teclado\LectorXML\obj\Debug\Datos.dll
+C:\Users\Win-G\Documents\Expression\Blend 4\Projects\Aprender-Teclado\LectorXML\obj\Debug\Datos.pdb

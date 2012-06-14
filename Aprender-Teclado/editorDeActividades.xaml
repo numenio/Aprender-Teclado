@@ -1,0 +1,25 @@
+﻿<Window
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:local="clr-namespace:Aprender_Teclado"
+	x:Class="Aprender_Teclado.editorDeActividades"
+	x:Name="Window"
+	Title="Editor de Actividades"
+	Width="711" Height="480" Background="Black" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen" Icon="input_keyboard.ico" ResizeMode="CanMinimize" KeyDown="Window_KeyDown">
+
+	<Grid x:Name="LayoutRoot" Width="700">
+		<TextBox x:Name="txtTextoActividad" Margin="36,131,35,74" TextWrapping="Wrap" TabIndex="4" AcceptsReturn="True" />
+		<TextBlock Height="21" Margin="36,104,63,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FFE9F50C"><Run Language="es-es" Text="Escriba el texto de su actividad, cada nuevo párrafo va a ser una lección diferente para sus alumnos:"/></TextBlock>
+		<TextBlock HorizontalAlignment="Left" Height="3" Margin="193,24,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="1"/>
+		<ComboBox x:Name="cmbDificultad" Height="23" Margin="210,49,0,0" VerticalAlignment="Top" TabIndex="1" HorizontalAlignment="Left" Width="150" />
+		<ComboBox x:Name="cmbTipo" Height="23" Margin="377,49,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="149" TabIndex="2" />
+		<Button x:Name="btnGuardar" Content="Guardar Actividad" HorizontalAlignment="Right" Height="22" Margin="0,0,35,33" VerticalAlignment="Bottom" Width="124" TabIndex="6" Click="btnGuardar_Click" />
+		<TextBox x:Name="txtNombreActividad" HorizontalAlignment="Left" Height="23" Margin="36,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="158" TabIndex="0" />
+		<TextBlock HorizontalAlignment="Left" Height="37" Margin="36,8,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="158" Foreground="#FFE9F50C"><Run Language="es-es" Text="Escriba el nombre de su actividad:"/></TextBlock>
+		<TextBlock Height="36" Margin="210,9,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FFE9F50C" HorizontalAlignment="Left" Width="150"><Run Language="es-es" Text="Elija la dificultad de su actividad:"/></TextBlock>
+		<TextBlock HorizontalAlignment="Right" Height="36" Margin="0,9,173,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" Foreground="#FFE9F50C"><Run Language="es-es" Text="Elija de qué tipo es su actividad:"/></TextBlock>
+		<local:etiquetaLink x:Name="linkEliminarActividad" HorizontalAlignment="Left" Height="22" Margin="36,0,0,33" VerticalAlignment="Bottom" Width="279" TabIndex="5" MouseLeftButtonDown="linkEliminarActividad_MouseLeftButtonDown" />
+        <TextBox Height="23" HorizontalAlignment="Right" Margin="0,49,35,0" Name="txtAutor" TabIndex="3" TextWrapping="Wrap" VerticalAlignment="Top" Width="126" />
+        <TextBlock Foreground="#FFE9F50C" Height="37" HorizontalAlignment="Left" Margin="539,8,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="126" Text="Escriba su nombre como autor:"></TextBlock>
+    </Grid>
+</Window>

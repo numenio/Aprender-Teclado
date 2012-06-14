@@ -1,0 +1,16 @@
+﻿<Window
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	x:Class="Aprender_Teclado.administrarUsuarios"
+	x:Name="Window"
+	Title="Usuarios"
+	Width="288" Height="449" BorderBrush="Black" Background="Black" KeyUp="Window_KeyUp" xmlns:my="clr-namespace:Aprender_Teclado" WindowStartupLocation="CenterScreen" Icon="input_keyboard.ico" ResizeMode="CanMinimize" Loaded="Window_Loaded">
+
+	<Grid x:Name="LayoutRoot">
+		<ListBox x:Name="listUsuarios" Margin="38,54,40,114" TabIndex="1" SelectedIndex="-1" KeyDown="listUsuarios_KeyDown" Background="{x:Null}" BorderBrush="{x:Null}" Width="204" ScrollViewer.HorizontalScrollBarVisibility="Disabled" MouseLeftButtonUp="listUsuarios_MouseDoubleClick" />
+		<TextBlock Height="20" Margin="47,30,49,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FFE9F50C"><Run Language="es-es" Text="Elija su nombre:"/></TextBlock>
+		<Button Content="Entrar al programa" Height="24" Margin="49,0,49,72" VerticalAlignment="Bottom" TabIndex="2" IsTabStop="False" Foreground="Black" Focusable="False" Click="Button_Click" />
+        <my:etiquetaLink HorizontalAlignment="Right" Margin="0,0,48,37" x:Name="linkNuevoUsuario" Width="169" MouseLeftButtonDown="linkNuevoUsuario_MouseLeftButtonDown" Height="22" VerticalAlignment="Bottom" />
+        <TextBlock Foreground="#FFE9F50C" Height="31" Margin="12,379,12,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="10" TextAlignment="Center"><Run Language="es-es" Text="Seleccionar usuario: FLECHAS. Elegir usuario: ENTER. Nuevo usuario: F1. Eliminar usuario: SUPRIMIR" /></TextBlock>
+    </Grid>
+</Window>

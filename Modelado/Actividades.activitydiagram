@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="4798b2ea-40bc-4b21-9b7d-a71debc5b696" name="Actividades" linkedPackageId="298a9c93-1201-47f3-a4a7-8f41739dd779" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="f46bd6e3-cb5a-4856-8a13-e680f3e055b3" name="Actividades" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="ecf346fe-0fe3-454a-8402-9904b85dfcfc" />
+        <nodes>
+          <initialNode Id="b86c6c6a-40b4-4533-863d-2a017446679e" name="Initial1" isLeaf="false">
+            <elementDefinition Id="acc23b2b-531f-4f67-96be-f2649ac4aa88" />
+            <flowNodeTargets>
+              <controlFlow Id="05911ef0-4f73-43e6-ab1b-ce36d5117855" isLeaf="false">
+                <opaqueActionMoniker Id="a2abd0f8-ab61-46f8-8ce5-20ec895284cf" LastKnownName="Cargar idioma interfaz" />
+                <elementDefinition Id="1fc99d14-8d9d-428c-8bdd-1c4f7e51eb71" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="a2abd0f8-ab61-46f8-8ce5-20ec895284cf" name="Cargar idioma interfaz" isLeaf="false">
+            <elementDefinition Id="837e7c15-8cdf-487d-975d-34e842feffcc" />
+          </opaqueAction>
+          <opaqueAction Id="2b718021-8e5d-42ef-9699-a6dd7952d04a" name="Preferencias:&#xD;&#xA;Elegir nivel básico, intermedio, experto&#xD;&#xA;Tamaño de letra y color&#xD;&#xA;sintetizador y velocidad&#xD;&#xA;última lección actividad&#xD;&#xA;por tiempo o libre&#xD;&#xA;cantidad de segundos en act por tiempo" isLeaf="false">
+            <elementDefinition Id="6f68ad99-3568-4f83-837f-ee7a0dffe1a8" />
+          </opaqueAction>
+          <opaqueAction Id="1b71feb4-ed17-4af0-a2ec-4694d6356241" name="Elegir por tiempo o libre" isLeaf="false">
+            <elementDefinition Id="43cc2a2a-9f49-4aeb-b52d-09322f632b11" />
+          </opaqueAction>
+          <opaqueAction Id="d0420503-afa7-43ff-a679-bbffc57ba526" name="Cargar desde preferencias básico, intermedio, experto" isLeaf="false">
+            <elementDefinition Id="4320365e-d1ed-427d-a8db-39070fb26954" />
+          </opaqueAction>
+          <opaqueAction Id="e84f7106-4e85-4334-b4ff-86e93546d7e7" name="Ver premios" isLeaf="false">
+            <elementDefinition Id="5d1330c9-f952-4fab-b7bd-2b834a251153" />
+          </opaqueAction>
+          <opaqueAction Id="3fb2f2cc-d93a-4a77-a4c9-ae98a861b1e3" name="Cargar índice de lecciones C:\Users\Win-G\Documents\Expression\Blend 4\Projects\Aprender-Teclado\Recursos\Lecciones\Español.xml&#xD;&#xA;&lt;!-- &lt;item&gt;[ID]&#xD;&#xA;&lt;!-- &lt;item&gt;[Tipo] Principiante, experto, intermedio&#xD;&#xA;&lt;!-- &lt;item&gt;[Path]&#xD;&#xA;&lt;!-- &lt;item&gt;[Autor]" isLeaf="false">
+            <elementDefinition Id="23514cf9-1fae-4720-9549-86264272c642" />
+          </opaqueAction>
+          <opaqueAction Id="80f59c69-19ca-444e-93b9-e53c42158f18" name="Ver en preferencias hasta qué lección se llegó" isLeaf="false">
+            <elementDefinition Id="33e074ca-f21f-4f6c-aec1-0a001171c64f" />
+          </opaqueAction>
+          <opaqueAction Id="658674b5-679b-44bf-8746-f2af0b403d8c" name="Cargar lección desde Path de arriba:&#xD;&#xA;&lt;!-- &lt;item&gt;[ID]&#xD;&#xA;&lt;!-- &lt;item&gt;[Nombre]&#xD;&#xA;&lt;!-- &lt;item&gt;[Sección]:&#xD;&#xA;     Letras&#xD;&#xA;     Palabras&#xD;&#xA;     Teclas Shift&#xD;&#xA;     Números&#xD;&#xA;     Números y Símbolos&#xD;&#xA;     Sílabas&#xD;&#xA;     &#xD;&#xA;&lt;!-- &lt;item&gt;[Texto]" isLeaf="false">
+            <elementDefinition Id="ec30ee43-b413-4709-9bb6-2ed7dd67be8f" />
+          </opaqueAction>
+          <opaqueAction Id="f9630956-8612-40a0-b823-1469f208433b" name="Vista de lecciones:&#xD;&#xA;Seleccionar Curso&#xD;&#xA;Seleccionar Lección" isLeaf="false">
+            <elementDefinition Id="5757e3de-12e4-4b19-91b8-0c8fc3e61ff7" />
+          </opaqueAction>
+          <opaqueAction Id="b80f107c-d583-4297-ace3-d71c5f21460f" name="Estadísticas:&#xD;&#xA;idUsuario&#xD;&#xA;idActividad&#xD;&#xA;idLección&#xD;&#xA;fecha&#xD;&#xA;hora&#xD;&#xA;caracteresMinuto&#xD;&#xA;aciertos&#xD;&#xA;% aciertos&#xD;&#xA;errores&#xD;&#xA;% errores&#xD;&#xA;duración" isLeaf="false">
+            <elementDefinition Id="7cbf693b-0c7f-4ded-a8ed-3e88a5c906b7" />
+          </opaqueAction>
+          <opaqueAction Id="b513965f-d481-4f48-bbd7-2abf832fb7eb" name="Editor de lecciones:&#xD;&#xA;Texto&#xD;&#xA;Nombre&#xD;&#xA;Sección" isLeaf="false">
+            <elementDefinition Id="3094062d-6f03-4c22-a06a-1270281e4954" />
+          </opaqueAction>
+          <opaqueAction Id="9eff9997-b3a4-4438-827a-5284bf03ef17" name="Loggin usuario" isLeaf="false">
+            <elementDefinition Id="1efffcc5-f160-43c5-9c6a-2be1baf5a4f6" />
+          </opaqueAction>
+          <opaqueAction Id="9f3065e7-80ef-4a52-bb38-e7fcf2e49e8b" name="Comenzar la lección, pausarla, recomenzar, detenerla" isLeaf="false">
+            <elementDefinition Id="41cb6912-bf9f-4e59-95d0-340175358fd7" />
+          </opaqueAction>
+          <opaqueAction Id="e760e1a7-9af9-4989-ab50-5564e5b798f1" name="ver cantidad de estrellas y estadísticas" isLeaf="false">
+            <elementDefinition Id="b7338f93-ca30-4270-8f65-128d4856b135" />
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="298a9c93-1201-47f3-a4a7-8f41739dd779" name="Modelado">
+    <elementDefinition Id="69c5c7da-732b-4de3-8760-63d1e87b2d92" />
+    <profileInstances>
+      <packageHasProfileInstances Id="78d50f03-0196-4799-8271-1a162b682b3c">
+        <profileInstance Id="498562f3-fb9f-486e-b5f8-52942351e3ec" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="ffe8d2de-7082-47bd-9d91-34d08b17f86c">
+        <profileInstance Id="75eb7f21-f0d5-4752-82cb-ea56cf280875" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</activityRootModel>

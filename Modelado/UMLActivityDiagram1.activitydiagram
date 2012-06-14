@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="98e15615-3f81-4cd3-b925-090d5fbd057e" name="Activity1" linkedPackageId="7a32d103-dbf0-4834-a2eb-52362d685e60" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="55cea119-0719-4786-b529-f8aea052f8e2" name="Activity1" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="d32811f7-ce3a-42f2-85d0-c5fe64e09dbf" />
+        <nodes>
+          <initialNode Id="4cfa2a83-3ca8-4683-91ab-926b3d34858b" name="Initial1" isLeaf="false">
+            <elementDefinition Id="fd1a68e9-7429-481a-a4ae-0f02ce01f907" />
+            <flowNodeTargets>
+              <controlFlow Id="a925f7fd-2f41-4380-b83c-2cf925a7dbd6" isLeaf="false">
+                <opaqueActionMoniker Id="25bc7d2c-8118-410b-822f-f8684163c3bb" LastKnownName="Loggin Usuario" />
+                <elementDefinition Id="74d9d292-4f20-46b4-84ff-53e360d2ca38" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="25bc7d2c-8118-410b-822f-f8684163c3bb" name="Loggin Usuario" isLeaf="false">
+            <elementDefinition Id="84c27851-7b6b-4a63-b53f-b0cd1c778747" />
+            <flowNodeTargets>
+              <controlFlow Id="08ddcd79-4e48-48ea-8ecf-6ae85cc4b149" isLeaf="false">
+                <opaqueActionMoniker Id="bdb54dcf-624c-44c3-a6db-4298b084ea86" LastKnownName="Cargar preferencias usuario" />
+                <elementDefinition Id="b96d5c70-7051-4722-8a50-c6d2c553a466" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="bdb54dcf-624c-44c3-a6db-4298b084ea86" name="Cargar preferencias usuario" isLeaf="false">
+            <elementDefinition Id="4e02e90e-68fa-466d-bb34-5a2c0768ea03" />
+            <flowNodeTargets>
+              <controlFlow Id="70f20a21-e64f-41c3-8a42-d411431bafb7" isLeaf="false">
+                <opaqueActionMoniker Id="cbd13d0a-a4dc-431f-8784-05bcf44fb475" LastKnownName="Seleccionar Continuar Curso o Elegir Actividad" />
+                <elementDefinition Id="e4da824e-7c69-4618-ba0f-2ddee45d1046" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="378e1d1d-23de-49a4-aa53-49d273f2d1f2" name="Decision1" isLeaf="false">
+            <elementDefinition Id="9b4b8606-8f97-4f7e-9656-ca1ca46e89b5" />
+            <flowNodeTargets>
+              <controlFlow Id="de121c69-a2f5-4c37-8f56-8293f9465fef" guard="elegir" isLeaf="false">
+                <opaqueActionMoniker Id="3033aca5-2c7b-42d1-8293-3c1f3782eaf1" LastKnownName="Mostrar todos los niveles (principiante, intermedio, experto)" />
+                <elementDefinition Id="5ab96fdb-e45e-45c2-a230-8e08c865567f" />
+              </controlFlow>
+              <controlFlow Id="7e144a66-2baa-483c-aa46-cf1402d90b0c" guard="curso" isLeaf="false">
+                <opaqueActionMoniker Id="c489fd10-d168-48ce-86d6-a92880d26e4e" LastKnownName="Cargar siguiente act desde preferencias" />
+                <elementDefinition Id="4d97cf45-e3d6-4120-9051-dc287757055f" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="cbd13d0a-a4dc-431f-8784-05bcf44fb475" name="Seleccionar Continuar Curso o Elegir Actividad" isLeaf="false">
+            <elementDefinition Id="5751685d-aa6f-4f43-a019-0dddfef9c6de" />
+            <flowNodeTargets>
+              <controlFlow Id="88816aee-d3a7-4cf8-ba5f-81ec87cb3652" isLeaf="false">
+                <decisionNodeMoniker Id="378e1d1d-23de-49a4-aa53-49d273f2d1f2" LastKnownName="Decision1" />
+                <elementDefinition Id="258b830b-7d2b-49e9-8ca5-3910d1e88c4a" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="c489fd10-d168-48ce-86d6-a92880d26e4e" name="Cargar siguiente act desde preferencias" isLeaf="false">
+            <elementDefinition Id="d75104e7-1cea-41f5-90c5-97a83ffa6c03" />
+            <flowNodeTargets>
+              <controlFlow Id="46b2d8fb-e9bc-477c-81b2-935350375dfb" isLeaf="false">
+                <opaqueActionMoniker Id="93440b7a-a850-4f79-9956-a7ed87c50282" LastKnownName="Por tiempo o libre" />
+                <elementDefinition Id="bf23ba7b-df80-4988-9c35-9f43799c252d" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="3033aca5-2c7b-42d1-8293-3c1f3782eaf1" name="Mostrar todos los niveles (principiante, intermedio, experto)" isLeaf="false">
+            <elementDefinition Id="0847bd2e-d6ec-4a16-ac77-ee6cec6a63b1" />
+            <flowNodeTargets>
+              <controlFlow Id="f93fe689-2800-4e36-83dd-1537c0d92b98" isLeaf="false">
+                <opaqueActionMoniker Id="7213ebcd-a4ad-4c7d-a573-09a381c8db3a" LastKnownName="mostrar todas las actividades" />
+                <elementDefinition Id="0ae9cfa8-6aac-4ce2-b910-08347d291750" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="7213ebcd-a4ad-4c7d-a573-09a381c8db3a" name="mostrar todas las actividades" isLeaf="false">
+            <elementDefinition Id="0d83e205-4dd7-41e3-9db3-92f8b673008d" />
+            <flowNodeTargets>
+              <controlFlow Id="282e4b1c-7937-4453-a198-5a6cfbde8f0e" isLeaf="false">
+                <opaqueActionMoniker Id="93440b7a-a850-4f79-9956-a7ed87c50282" LastKnownName="Por tiempo o libre" />
+                <elementDefinition Id="9206f992-d68d-4770-902a-8379ce983289" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="93440b7a-a850-4f79-9956-a7ed87c50282" name="Por tiempo o libre" isLeaf="false">
+            <elementDefinition Id="b9a321dc-1f97-43fa-8b78-b5201e12f9f9" />
+            <flowNodeTargets>
+              <controlFlow Id="1d50adc1-42ef-4f6c-aea8-6e74d19f88df" isLeaf="false">
+                <decisionNodeMoniker Id="39c9aa2b-a7c7-41e7-a13f-d9c8494ee635" LastKnownName="Decision11" />
+                <elementDefinition Id="9cf6e1e8-6068-424d-a503-f06f83b094fb" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="39c9aa2b-a7c7-41e7-a13f-d9c8494ee635" name="Decision11" isLeaf="false">
+            <elementDefinition Id="996e1d64-2891-4ae8-979f-1a202cc4d1ac" />
+            <flowNodeTargets>
+              <controlFlow Id="f2259a9c-e5ce-476d-887b-8a2610bfa3e0" guard="por tiempo" isLeaf="false">
+                <opaqueActionMoniker Id="f8727ac1-3789-4e76-a6ae-2b0fc276575e" LastKnownName="Iniciar reloj" />
+                <elementDefinition Id="831244b6-7d37-4d80-b098-55121acaa706" />
+              </controlFlow>
+              <controlFlow Id="0bfc89e9-5c9b-4b14-8568-2d0da698fe6a" guard="libre" isLeaf="false">
+                <opaqueActionMoniker Id="591c1938-77a5-46be-a2ff-93e494d03c1f" LastKnownName="Iniciar actividad" />
+                <elementDefinition Id="366b6076-1d0d-4e52-b033-a67749f5bb0c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="f8727ac1-3789-4e76-a6ae-2b0fc276575e" name="Iniciar reloj" isLeaf="false">
+            <elementDefinition Id="d0261e10-7e1c-4e46-9e8f-10577c9dacbe" />
+            <flowNodeTargets>
+              <controlFlow Id="02e9bbd1-8691-4dfd-b43a-88d6552bf20a" isLeaf="false">
+                <opaqueActionMoniker Id="591c1938-77a5-46be-a2ff-93e494d03c1f" LastKnownName="Iniciar actividad" />
+                <elementDefinition Id="bc2ab427-d8f2-49b5-bdb0-d71024c1cfa8" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="591c1938-77a5-46be-a2ff-93e494d03c1f" name="Iniciar actividad" isLeaf="false">
+            <elementDefinition Id="1f53774f-dfb9-42dc-9cb8-1c3d0eae3340" />
+          </opaqueAction>
+          <opaqueAction Id="da8c01db-801f-446d-aae5-a0c54cca952a" name="Una actividad del índice de actividades (id actividad)" isLeaf="false">
+            <elementDefinition Id="18c95644-0d82-42cd-8172-2b3801277e7a" />
+            <flowNodeTargets>
+              <controlFlow Id="e7730afc-8a05-46d1-91b2-ef01a7c9942c" guard="tiene varias" isLeaf="false">
+                <opaqueActionMoniker Id="25c5a38c-101a-494f-a604-a096c186d16e" LastKnownName="Lecciones en el xml de la lección (id lección)" />
+                <elementDefinition Id="e6519ac8-c53b-4e76-89ec-e13a15a7ce9a" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="25c5a38c-101a-494f-a604-a096c186d16e" name="Lecciones en el xml de la lección (id lección)" isLeaf="false">
+            <elementDefinition Id="eda8ccea-5627-4ea6-945c-2d73fa162e4f" />
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="7a32d103-dbf0-4834-a2eb-52362d685e60" name="Modelado">
+    <elementDefinition Id="69c5c7da-732b-4de3-8760-63d1e87b2d92" />
+    <profileInstances>
+      <packageHasProfileInstances Id="c29de41b-f032-497c-8ee9-1a67d6efc741">
+        <profileInstance Id="087d3bff-5464-4945-b4b1-28eb8539d284" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="3eebcb84-a8b9-4e6f-a6b4-94a2031ef5f0">
+        <profileInstance Id="da1cc715-62cc-42b2-9427-59a6a173dfcc" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</activityRootModel>
